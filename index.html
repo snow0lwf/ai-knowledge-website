@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI閫氳瘑鍏ㄦ櫙 - 浜哄伐鏅鸿兘鐭ヨ瘑搴?/title>
+    <title>AI通识全景 - 人工智能知识库</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -26,7 +26,7 @@
             font-size: 15px;
         }
         
-        /* 瀵艰埅鏍?*/
+        /* 导航栏 */
         .navbar {
             background: linear-gradient(135deg, #0D1E32 0%, #1A3A5C 100%);
             color: white;
@@ -57,14 +57,14 @@
             opacity: 0.8;
         }
         
-        /* 涓诲鍣?*/
+        /* 主容器 */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 30px 20px;
         }
         
-        /* 鏂伴椈鍖哄煙 */
+        /* 新闻区域 */
         .news-section {
             background: white;
             border-radius: 12px;
@@ -119,7 +119,7 @@
             margin-top: 10px;
         }
         
-        /* 鐭ヨ瘑搴撳尯鍩?*/
+        /* 知识库区域 */
         .knowledge-section {
             background: white;
             border-radius: 12px;
@@ -169,7 +169,7 @@
             opacity: 0.9;
         }
         
-        /* 鏇存柊鏃堕棿 */
+        /* 更新时间 */
         .update-info {
             text-align: center;
             padding: 20px;
@@ -177,7 +177,7 @@
             font-size: 13px;
         }
         
-        /* 鍝嶅簲寮?*/
+        /* 响应式 */
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
@@ -195,93 +195,94 @@
     </style>
 </head>
 <body>
-    <!-- 瀵艰埅鏍?-->
+    <!-- 导航栏 -->
     <div class="navbar">
-        <h1>馃 AI閫氳瘑鍏ㄦ櫙</h1>
+        <h1>🤖 AI通识全景</h1>
         <nav>
-            <a href="#news">鏈€鏂拌祫璁?/a>
-            <a href="#knowledge">鐭ヨ瘑搴?/a>
-            <a href="#about">鍏充簬</a>
+            <a href="#news">最新资讯</a>
+            <a href="#knowledge">知识库</a>
+            <a href="#about">关于</a>
         </nav>
     </div>
 
     <div class="container">
-        <!-- 鏈€鏂癆I璧勮 -->
+        <!-- 最新AI资讯 -->
         <div class="news-section" id="news">
-            <h2>馃摪 鏈€鏂癆I璧勮</h2>
+            <h2>📰 最新AI资讯</h2>
             <div class="news-grid" id="newsContainer">
                 <div class="news-card">
-                    <h3>姝ｅ湪鍔犺浇鏈€鏂癆I鏂伴椈...</h3>
-                    <p>璇风◢绛夛紝绯荤粺姝ｅ湪浠庡涓潵婧愭姄鍙栨渶鏂扮殑AI琛屼笟鍔ㄦ€?/p>
+                    <h3>正在加载最新AI新闻...</h3>
+                    <p>请稍等，系统正在从多个来源抓取最新的AI行业动态</p>
                 </div>
             </div>
         </div>
 
-        <!-- AI鐭ヨ瘑搴?-->
+        <!-- AI知识库 -->
         <div class="knowledge-section" id="knowledge">
-            <h2>馃摎 AI鐭ヨ瘑搴?/h2>
+            <h2>📚 AI知识库</h2>
             <div class="knowledge-grid">
                 <div class="knowledge-card" onclick="location.href='knowledge.html#ch1'">
-                    <h3>AI鍙戝睍鍘嗙▼</h3>
-                    <p>浠庤揪鐗硅寘鏂細璁埌鐢熸垚寮廇I鐨勬紨杩涘巻绋?/p>
+                    <h3>AI发展历程</h3>
+                    <p>从达特茅斯会议到生成式AI的演进历程</p>
                 </div>
                 <div class="knowledge-card" onclick="location.href='knowledge.html#ch2'">
-                    <h3>涓夊ぇ娴佹淳</h3>
-                    <p>绗﹀彿涓讳箟銆佽繛鎺ヤ富涔夈€佽涓轰富涔夌殑鏍稿績鎬濇兂</p>
+                    <h3>三大流派</h3>
+                    <p>符号主义、连接主义、行为主义的核心思想</p>
                 </div>
                 <div class="knowledge-card" onclick="location.href='knowledge.html#ch3'">
-                    <h3>鏈哄櫒瀛︿範</h3>
-                    <p>鐩戠潱瀛︿範銆佹棤鐩戠潱瀛︿範銆佸己鍖栧涔犲叏瑙ｆ瀽</p>
+                    <h3>机器学习</h3>
+                    <p>监督学习、无监督学习、强化学习全解析</p>
                 </div>
                 <div class="knowledge-card" onclick="location.href='knowledge.html#ch4'">
-                    <h3>娣卞害瀛︿範</h3>
-                    <p>CNN銆丷NN銆乀ransformer鏋舵瀯璇﹁В</p>
+                    <h3>深度学习</h3>
+                    <p>CNN、RNN、Transformer架构详解</p>
                 </div>
             </div>
         </div>
 
-        <!-- 鏇存柊淇℃伅 -->
+        <!-- 更新信息 -->
         <div class="update-info">
-            <p>馃搮 缃戠珯鍐呭鑷姩鏇存柊 | 鏈€鍚庢洿鏂版椂闂? <span id="lastUpdate">鍔犺浇涓?..</span></p>
-            <p>馃挕 鏈珯鏁村悎澶氭簮AI璧勮锛屽畾鏈熻嚜鍔ㄦ洿鏂板唴瀹?/p>
+            <p>📅 网站内容自动更新 | 最后更新时间: <span id="lastUpdate">加载中...</span></p>
+            <p>💡 本站整合多源AI资讯，定期自动更新内容</p>
         </div>
     </div>
 
     <script>
-        // 妯℃嫙AI鏂伴椈鏁版嵁锛堝疄闄呭簲浠嶢PI鑾峰彇锛?        const mockNews = [
+        // 模拟AI新闻数据（实际应从API获取）
+        const mockNews = [
             {
-                title: "OpenAI鍙戝竷GPT-5棰勮鐗堬紝澶氭ā鎬佽兘鍔涘ぇ骞呮彁鍗?,
-                summary: "鏈€鏂版ā鍨嬪湪鍥惧儚鐞嗚В銆佷唬鐮佺敓鎴愬拰鎺ㄧ悊鑳藉姏涓婂彇寰楃獊鐮存€ц繘灞?..",
+                title: "OpenAI发布GPT-5预览版，多模态能力大幅提升",
+                summary: "最新模型在图像理解、代码生成和推理能力上取得突破性进展...",
                 date: "2026-05-02"
             },
             {
-                title: "DeepMind鐨凙lphaFold 3鎴愬姛棰勬祴铔嬬櫧璐ㄧ浉浜掍綔鐢?,
-                summary: "鏂扮増鏈彲浠ュ噯纭娴嬭泲鐧借川涓庡叾浠栧垎瀛愮殑鐩镐簰浣滅敤锛屽姞閫熻嵂鐗╃爺鍙?..",
+                title: "DeepMind的AlphaFold 3成功预测蛋白质相互作用",
+                summary: "新版本可以准确预测蛋白质与其他分子的相互作用，加速药物研发...",
                 date: "2026-05-01"
             },
             {
-                title: "涓浗鍙戝竷棣栦釜鑷富鍙帶鐨勫ぇ妯″瀷鏍囧噯浣撶郴",
-                summary: "宸ヤ俊閮ㄧ壍澶村埗瀹氱殑AI澶фā鍨嬪浗瀹舵爣鍑嗘寮忓彂甯冿紝鎺ㄥ姩浜т笟瑙勮寖鍖栧彂灞?..",
+                title: "中国发布首个自主可控的大模型标准体系",
+                summary: "工信部牵头制定的AI大模型国家标准正式发布，推动产业规范化发展...",
                 date: "2026-04-30"
             },
             {
-                title: "Meta寮€婧怢lama 4锛屾€ц兘瓒呰秺GPT-4",
-                summary: "鏂颁竴浠ｅ紑婧愬ぇ妯″瀷鍦ㄥ椤瑰熀鍑嗘祴璇曚腑琛ㄧ幇浼樺紓锛屼笖瀹屽叏寮€鏀惧晢鐢?..",
+                title: "Meta开源Llama 4，性能超越GPT-4",
+                summary: "新一代开源大模型在多项基准测试中表现优异，且完全开放商用...",
                 date: "2026-04-28"
             },
             {
-                title: "AI Agent鎶€鏈獊鐮达細鑷富瀹屾垚澶嶆潅浠诲姟鐨凙I鍔╂墜",
-                summary: "鐮旂┒浜哄憳灞曠ず浜嗚兘澶熻嚜涓昏鍒掋€佹墽琛屽拰鍙嶆€濈殑AI Agent绯荤粺...",
+                title: "AI Agent技术突破：自主完成复杂任务的AI助手",
+                summary: "研究人员展示了能够自主规划、执行和反思的AI Agent系统...",
                 date: "2026-04-25"
             },
             {
-                title: "娆х洘AI娉曟姝ｅ紡鐢熸晥锛屽叏鐞傾I鐩戠杩涘叆鏂伴樁娈?,
-                summary: "涓栫晫涓婄涓€閮ㄥ叏闈㈢殑浜哄伐鏅鸿兘娉曟寮€濮嬪疄鏂斤紝瀵逛笉鍚岄闄╃骇鍒殑AI绯荤粺杩涜鍒嗙被鐩戠...",
+                title: "欧盟AI法案正式生效，全球AI监管进入新阶段",
+                summary: "世界上第一部全面的人工智能法案开始实施，对不同风险级别的AI系统进行分类监管...",
                 date: "2026-04-20"
             }
         ];
 
-        // 娓叉煋鏂伴椈
+        // 渲染新闻
         function renderNews() {
             const container = document.getElementById('newsContainer');
             container.innerHTML = '';
@@ -292,14 +293,15 @@
                 card.innerHTML = `
                     <h3>${news.title}</h3>
                     <p>${news.summary}</p>
-                    <div class="date">馃搮 ${news.date}</div>
+                    <div class="date">📅 ${news.date}</div>
                 `;
-                card.onclick = () => alert('鍗冲皢璺宠浆鍒拌缁嗛〉闈?..');
+                card.onclick = () => alert('即将跳转到详细页面...');
                 container.appendChild(card);
             });
         }
 
-        // 鏇存柊鏈€鍚庢洿鏂版椂闂?        function updateLastUpdateTime() {
+        // 更新最后更新时间
+        function updateLastUpdateTime() {
             const now = new Date();
             const timeStr = now.toLocaleString('zh-CN', { 
                 year: 'numeric', 
@@ -311,16 +313,17 @@
             document.getElementById('lastUpdate').textContent = timeStr;
         }
 
-        // 椤甸潰鍔犺浇瀹屾垚鍚庢墽琛?        document.addEventListener('DOMContentLoaded', () => {
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', () => {
             renderNews();
             updateLastUpdateTime();
         });
 
-        // 瀹為檯閮ㄧ讲鏃讹紝杩欓噷搴旇璋冪敤鍚庣API鑾峰彇鐪熷疄鏂伴椈
+        // 实际部署时，这里应该调用后端API获取真实新闻
         // fetch('/api/news')
         //     .then(res => res.json())
         //     .then(data => {
-        //         // 娓叉煋鐪熷疄鏂伴椈鏁版嵁
+        //         // 渲染真实新闻数据
         //     });
     </script>
 </body>
