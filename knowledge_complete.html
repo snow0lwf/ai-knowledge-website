@@ -329,6 +329,22 @@
             border-bottom: 1px solid var(--accent1);
         }
         
+        .news-link {
+            color: var(--primary);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--accent2);
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        
+        .news-link:hover {
+            color: var(--accent2);
+        }
+        
+        .news-link::before {
+            content: "📰 ";
+        }
+        
         .concept-image {
             text-align: center;
             margin: 30px 0;
@@ -346,6 +362,48 @@
             color: var(--secondary);
             margin-top: 10px;
             font-style: italic;
+        }
+        
+        .model-section {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            background: #FAFBFC;
+        }
+        
+        .model-section h4 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .model-meta {
+            font-size: 13px;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+        
+        .tag-latest {
+            display: inline-block;
+            background: #E8704A;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        
+        .tag-deprecated {
+            display: inline-block;
+            background: #EA4335;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: bold;
         }
         
         @media (max-width: 768px) {
@@ -431,12 +489,12 @@
                 
                 <div class="timeline-item">
                     <div class="timeline-year">2012年</div>
-                    <p><strong>AlexNet横空出世</strong>：在<a href="https://baike.baidu.com/item/ImageNet" target="_blank" class="baike-link">ImageNet</a>竞赛中，AlexNet将错误率降低10个百分点，引发深度学习革命。</p>
+                    <p><strong><a href="https://baike.baidu.com/item/AlexNet" target="_blank" class="baike-link">AlexNet</a>横空出世</strong>：在<a href="https://baike.baidu.com/item/ImageNet" target="_blank" class="baike-link">ImageNet</a>竞赛中，AlexNet将错误率降低10个百分点，引发深度学习革命。</p>
                 </div>
                 
                 <div class="timeline-item">
                     <div class="timeline-year">2016年</div>
-                    <p><strong>AlphaGo击败李世石</strong>：<a href="https://baike.baidu.com/item/DeepMind" target="_blank" class="baike-link">DeepMind</a>的AlphaGo以4:1击败围棋世界冠军，展示了AI在复杂决策中的能力。</p>
+                    <p><strong>AlphaGo击败李世石</strong>：<a href="https://baike.baidu.com/item/DeepMind" target="_blank" class="baike-link">DeepMind</a>的<a href="https://baike.baidu.com/item/AlphaGo" target="_blank" class="baike-link">AlphaGo</a>以4:1击败围棋世界冠军，展示了AI在复杂决策中的能力。</p>
                 </div>
                 
                 <div class="timeline-item">
@@ -471,7 +529,7 @@
             
             <h3>2.1 <a href="https://baike.baidu.com/item/%E7%AC%A6%E5%8F%B7%E4%B8%BB%E4%B9%89" target="_blank" class="baike-link">符号主义</a>（Symbolism）</h3>
             <p><strong>核心思想</strong>：通过符号推理和逻辑运算来模拟智能，认为智能可以通过符号操作来实现。</p>
-            <p><strong>代表人物</strong>：约翰·麦卡锡、艾伦·纽厄尔、赫伯特·西蒙</p>
+            <p><strong>代表人物</strong>：<a href="https://baike.baidu.com/item/%E7%BA%A6%E7%BF%B0%C2%B7%E9%BA%A6%E5%8D%A1%E9%94%A1" target="_blank" class="baike-link">约翰·麦卡锡</a>、<a href="https://baike.baidu.com/item/%E8%89%BE%E4%BC%A6%C2%B7%E7%BA%BD%E5%8E%84%E5%B0%94" target="_blank" class="baike-link">艾伦·纽厄尔</a>、<a href="https://baike.baidu.com/item/%E8%B5%AB%E4%BC%AF%E7%89%B9%C2%B7%E8%A5%BF%E8%92%99" target="_blank" class="baike-link">赫伯特·西蒙</a></p>
             <p><strong>典型成果</strong>：</p>
             <ul>
                 <li><a href="https://baike.baidu.com/item/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F" target="_blank" class="baike-link">专家系统</a>（如MYCIN医疗诊断系统）</li>
@@ -489,14 +547,14 @@
                 <li><a href="https://baike.baidu.com/item/%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C" target="_blank" class="baike-link">人工神经网络</a>（ANN）</li>
                 <li><a href="https://baike.baidu.com/item/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C" target="_blank" class="baike-link">卷积神经网络</a>（CNN）</li>
                 <li><a href="https://baike.baidu.com/item/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C" target="_blank" class="baike-link">循环神经网络</a>（RNN）</li>
-                <li>Transformer架构</li>
+                <li><a href="https://baike.baidu.com/item/Transformer" target="_blank" class="baike-link">Transformer架构</a></li>
             </ul>
             <p><strong>优势</strong>：擅长处理感知任务（图像、语音），具有强大的学习能力和泛化能力。</p>
             <p><strong>局限</strong>：可解释性差（"黑盒"问题），需要大量训练数据。</p>
             
             <h3>2.3 <a href="https://baike.baidu.com/item/%E8%A1%8C%E4%B8%BA%E4%B8%BB%E4%B9%89" target="_blank" class="baike-link">行为主义</a>（Behaviorism）</h3>
             <p><strong>核心思想</strong>：通过与环境的交互和反馈来学习智能行为，强调"做中学"。</p>
-            <p><strong>代表人物</strong>：罗德尼·布鲁克斯</p>
+            <p><strong>代表人物</strong>：<a href="https://baike.baidu.com/item/%E7%BD%97%E5%BE%B7%E5%B0%BC%C2%B7%E5%B8%83%E9%B2%81%E5%85%8B%E6%96%AF" target="_blank" class="baike-link">罗德尼·布鲁克斯</a></p>
             <p><strong>典型成果</strong>：</p>
             <ul>
                 <li><a href="https://baike.baidu.com/item/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0" target="_blank" class="baike-link">强化学习</a>（Reinforcement Learning）</li>
@@ -519,201 +577,281 @@
             <h2>第三章：机器学习基础</h2>
             
             <h3>3.1 什么是<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0" target="_blank" class="baike-link">机器学习</a>？</h3>
-            <p>机器学习是AI的一个重要分支，它使计算机能够从数据中学习，而无需显式编程。Arthur Samuel（1959）将其定义为："赋予计算机学习能力的研究领域，无需明确编程。"</p>
+            <p>机器学习是AI的一个重要分支，它使计算机能够从数据中学习，而无需显式编程。<a href="https://baike.baidu.com/item/%E9%98%BF%E7%91%9F%C2%B7%E8%90%A8%E7%BC%AA%E5%B0%94" target="_blank" class="baike-link">Arthur Samuel</a>（1959）将其定义为："赋予计算机学习能力的研究领域，无需明确编程。"</p>
             
-            <h3>3.2 机器学习的分类维度</h3>
-            <p>机器学习可以从多个维度进行分类，理解这些维度及其关联关系至关重要。</p>
+            <h3>3.2 机器学习的分类体系</h3>
+            <p>机器学习可以从多个维度进行分类，理解这些维度及其关联关系至关重要。下面这张框架图完整展示了机器学习的分支和相互关系：</p>
             
-            <h4>维度1：按<a href="https://baike.baidu.com/item/%E5%AD%A6%E4%B9%A0%E6%96%B9%E5%BC%8F" target="_blank" class="baike-link">学习方式</a>分类</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0" target="_blank" class="baike-link">监督学习</a></strong>：使用带标签的数据训练模型（如分类、回归）</li>
-                <li><strong><a href="https://baike.baidu.com/item/%E6%97%A0%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0" target="_blank" class="baike-link">无监督学习</a></strong>：从无标签数据中发现模式（如聚类、降维）</li>
-                <li><strong>半监督学习</strong>：结合少量标签数据和大量无标签数据</li>
-                <li><strong>强化学习</strong>：通过与环境交互获得反馈来学习</li>
-            </ul>
+            <h3>3.3 🔑 机器学习分类框架图</h3>
             
-            <h4>维度2：按模型类型分类</h4>
-            <ul>
-                <li><strong>传统机器学习</strong>：<a href="https://baike.baidu.com/item/%E5%86%B3%E7%AD%96%E6%A0%91" target="_blank" class="baike-link">决策树</a>、<a href="https://baike.baidu.com/item/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA" target="_blank" class="baike-link">SVM</a>、<a href="https://baike.baidu.com/item/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF" target="_blank" class="baike-link">朴素贝叶斯</a>、<a href="https://baike.baidu.com/item/K-Means" target="_blank" class="baike-link">K-Means</a>等</li>
-                <li><strong>深度学习</strong>：CNN、RNN、Transformer等神经网络模型</li>
-            </ul>
-            
-            <h4>维度3：按<a href="https://baike.baidu.com/item/%E4%BB%BB%E5%8A%A1%E7%B1%BB%E5%9E%8B" target="_blank" class="baike-link">任务类型</a>分类</h4>
-            <ul>
-                <li><strong>分类</strong>：预测离散类别（如垃圾邮件检测）</li>
-                <li><strong>回归</strong>：预测连续数值（如房价预测）</li>
-                <li><strong>聚类</strong>：将相似数据分组（如客户分群）</li>
-                <li><strong>降维</strong>：减少特征维度（如<a href="https://baike.baidu.com/item/PCA" target="_blank" class="baike-link">PCA</a>）</li>
-            </ul>
-            
-            <h3>3.3 🔑 核心概念关系图</h3>
-            <p>理解机器学习的关键在于理解<strong>不同分类维度之间的关系</strong>。下图展示了机器学习知识体系的整体架构：</p>
-            
-            <!-- 机器学习框架图 - SVG版 -->
+            <!-- 机器学习框架图 - 完整版 -->
             <div class="concept-image">
-                <svg viewBox="0 0 900 700" width="100%" height="auto" style="max-width: 900px; margin: 0 auto; display: block;">
-                    <!-- 定义箭头 -->
+                <svg viewBox="0 0 960 880" width="100%" height="auto" style="max-width: 960px; margin: 0 auto; display: block;">
                     <defs>
-                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                        <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                             <polygon points="0 0, 10 3.5, 0 7" fill="#5F6368" />
                         </marker>
-                        <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                        <marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#E8704A" />
+                        </marker>
+                        <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#34A853" />
+                        </marker>
+                        <marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#9C27B0" />
+                        </marker>
+                        <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                             <polygon points="0 0, 10 3.5, 0 7" fill="#1A73E8" />
                         </marker>
+                        <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+                            <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.15" />
+                        </filter>
                     </defs>
                     
-                    <!-- 标题 -->
-                    <text x="450" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#1A73E8">机器学习知识体系框架图</text>
+                    <!-- ========== 第一层：人工智能 / 机器学习 ========== -->
+                    <rect x="330" y="10" width="300" height="55" rx="14" fill="#0D47A1" filter="url(#shadow)" />
+                    <text x="480" y="43" text-anchor="middle" fill="white" font-size="20" font-weight="bold">人工智能（AI）</text>
                     
-                    <!-- 第一层：机器学习 -->
-                    <rect x="325" y="50" width="250" height="60" rx="12" fill="#1A73E8" />
-                    <text x="450" y="85" text-anchor="middle" fill="white" font-size="18" font-weight="bold">机器学习</text>
+                    <line x1="480" y1="65" x2="480" y2="85" stroke="#5F6368" stroke-width="2" marker-end="url(#arrow)" />
                     
-                    <!-- 箭头1 -->
-                    <line x1="450" y1="110" x2="450" y2="150" stroke="#5F6368" stroke-width="2" marker-end="url(#arrowhead)" />
-                    <text x="450" y="135" text-anchor="middle" fill="#5F6368" font-size="14">按学习方式分类</text>
+                    <rect x="310" y="90" width="340" height="55" rx="14" fill="#1A73E8" filter="url(#shadow)" />
+                    <text x="480" y="123" text-anchor="middle" fill="white" font-size="20" font-weight="bold">机器学习（Machine Learning）</text>
                     
-                    <!-- 第二层：学习方式 -->
-                    <rect x="50" y="160" width="140" height="50" rx="8" fill="#E8704A" />
-                    <text x="120" y="190" text-anchor="middle" fill="white" font-size="14">监督学习</text>
+                    <!-- ========== 第二层：按学习方式分类（四大类） ========== -->
+                    <line x1="480" y1="145" x2="480" y2="175" stroke="#5F6368" stroke-width="2" marker-end="url(#arrow)" />
+                    <text x="480" y="167" text-anchor="middle" fill="#5F6368" font-size="13" font-weight="bold">▼ 按学习方式分类</text>
                     
-                    <rect x="220" y="160" width="140" height="50" rx="8" fill="#E8704A" />
-                    <text x="290" y="190" text-anchor="middle" fill="white" font-size="14">无监督学习</text>
+                    <!-- 监督学习 -->
+                    <rect x="30" y="185" width="175" height="48" rx="10" fill="#E8704A" filter="url(#shadow)" />
+                    <text x="117" y="213" text-anchor="middle" fill="white" font-size="15" font-weight="bold">监督学习</text>
+                    <text x="117" y="228" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">Supervised Learning</text>
                     
-                    <rect x="390" y="160" width="140" height="50" rx="8" fill="#E8704A" />
-                    <text x="460" y="190" text-anchor="middle" fill="white" font-size="14">强化学习</text>
+                    <!-- 无监督学习 -->
+                    <rect x="220" y="185" width="175" height="48" rx="10" fill="#E8704A" filter="url(#shadow)" />
+                    <text x="307" y="213" text-anchor="middle" fill="white" font-size="15" font-weight="bold">无监督学习</text>
+                    <text x="307" y="228" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">Unsupervised Learning</text>
                     
-                    <rect x="560" y="160" width="140" height="50" rx="8" fill="#E8704A" />
-                    <text x="630" y="190" text-anchor="middle" fill="white" font-size="14">半监督学习</text>
+                    <!-- 半监督学习 -->
+                    <rect x="410" y="185" width="175" height="48" rx="10" fill="#E8704A" filter="url(#shadow)" />
+                    <text x="497" y="213" text-anchor="middle" fill="white" font-size="15" font-weight="bold">半监督学习</text>
+                    <text x="497" y="228" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">Semi-supervised</text>
                     
-                    <!-- 箭头2 -->
-                    <line x1="450" y1="210" x2="450" y2="250" stroke="#5F6368" stroke-width="2" marker-end="url(#arrowhead)" />
-                    <text x="450" y="235" text-anchor="middle" fill="#5F6368" font-size="14">每种方式可用不同模型</text>
+                    <!-- 强化学习 -->
+                    <rect x="600" y="185" width="175" height="48" rx="10" fill="#E8704A" filter="url(#shadow)" />
+                    <text x="687" y="213" text-anchor="middle" fill="white" font-size="15" font-weight="bold">强化学习</text>
+                    <text x="687" y="228" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">Reinforcement Learning</text>
+
+                    <!-- 自监督学习 -->
+                    <rect x="790" y="185" width="155" height="48" rx="10" fill="#FF8A65" filter="url(#shadow)" />
+                    <text x="867" y="213" text-anchor="middle" fill="white" font-size="15" font-weight="bold">自监督学习</text>
+                    <text x="867" y="228" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">Self-supervised</text>
                     
-                    <!-- 第三层：模型类型 -->
-                    <rect x="150" y="260" width="220" height="50" rx="8" fill="#34A853" />
-                    <text x="260" y="290" text-anchor="middle" fill="white" font-size="14">传统机器学习模型</text>
+                    <!-- ========== 监督学习 子分类 ========== -->
+                    <line x1="117" y1="233" x2="117" y2="260" stroke="#E8704A" stroke-width="1.5" marker-end="url(#arrow-orange)" />
+                    <text x="117" y="253" text-anchor="middle" fill="#E8704A" font-size="10">▼ 回归（连续） / 分类（离散）</text>
                     
-                    <rect x="430" y="260" width="220" height="50" rx="8" fill="#34A853" />
-                    <text x="540" y="290" text-anchor="middle" fill="white" font-size="14">深度学习模型（神经网络）</text>
+                    <rect x="15" y="265" width="100" height="35" rx="6" fill="#FFF3E0" stroke="#E8704A" stroke-width="1.5" />
+                    <text x="65" y="287" text-anchor="middle" fill="#E8704A" font-size="12" font-weight="bold">回归</text>
                     
-                    <!-- 连接线：学习方式 → 模型类型 -->
-                    <line x1="120" y1="210" x2="260" y2="260" stroke="#E8704A" stroke-width="1.5" stroke-dasharray="5,5" />
-                    <line x1="290" y1="210" x2="260" y2="260" stroke="#E8704A" stroke-width="1.5" stroke-dasharray="5,5" />
-                    <line x1="460" y1="210" x2="540" y2="260" stroke="#E8704A" stroke-width="1.5" stroke-dasharray="5,5" />
-                    <line x1="630" y1="210" x2="540" y2="260" stroke="#E8704A" stroke-width="1.5" stroke-dasharray="5,5" />
+                    <rect x="125" y="265" width="100" height="35" rx="6" fill="#FFF3E0" stroke="#E8704A" stroke-width="1.5" />
+                    <text x="175" y="287" text-anchor="middle" fill="#E8704A" font-size="12" font-weight="bold">分类</text>
                     
-                    <!-- 箭头3 -->
-                    <line x1="450" y1="310" x2="450" y2="350" stroke="#5F6368" stroke-width="2" marker-end="url(#arrowhead)" />
-                    <text x="450" y="335" text-anchor="middle" fill="#5F6368" font-size="14">示例算法</text>
+                    <!-- ========== 监督学习算法 ========== -->
+                    <line x1="117" y1="300" x2="117" y2="330" stroke="#E8704A" stroke-width="1.5" marker-end="url(#arrow-orange)" />
                     
-                    <!-- 第四层：具体算法 - 第一行 -->
-                    <rect x="50" y="360" width="110" height="40" rx="6" fill="#5F6368" />
-                    <text x="105" y="385" text-anchor="middle" fill="white" font-size="12">决策树</text>
+                    <rect x="10" y="335" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="55" y="355" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">线性回归</text>
                     
-                    <rect x="180" y="360" width="110" height="40" rx="6" fill="#5F6368" />
-                    <text x="235" y="385" text-anchor="middle" fill="white" font-size="12">朴素贝叶斯</text>
+                    <rect x="108" y="335" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="153" y="355" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">逻辑回归</text>
                     
-                    <rect x="310" y="360" width="110" height="40" rx="6" fill="#5F6368" />
-                    <text x="365" y="385" text-anchor="middle" fill="white" font-size="12">SVM</text>
+                    <rect x="10" y="375" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="55" y="395" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">决策树</text>
                     
-                    <rect x="440" y="360" width="110" height="40" rx="6" fill="#5F6368" />
-                    <text x="495" y="385" text-anchor="middle" fill="white" font-size="12">CNN</text>
+                    <rect x="108" y="375" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="153" y="395" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">SVM</text>
                     
-                    <rect x="570" y="360" width="110" height="40" rx="6" fill="#5F6368" />
-                    <text x="625" y="385" text-anchor="middle" fill="white" font-size="12">RNN</text>
+                    <rect x="10" y="415" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="55" y="435" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">朴素贝叶斯</text>
                     
-                    <rect x="700" y="360" width="110" height="40" rx="6" fill="#5F6368" />
-                    <text x="755" y="385" text-anchor="middle" fill="white" font-size="12">Transformer</text>
+                    <rect x="108" y="415" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="153" y="435" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">KNN</text>
                     
-                    <!-- 第四层：具体算法 - 第二行 -->
-                    <rect x="130" y="420" width="110" height="40" rx="6" fill="#5F6368" />
-                    <text x="185" y="445" text-anchor="middle" fill="white" font-size="12">线性回归</text>
+                    <rect x="10" y="455" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="55" y="475" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">随机森林</text>
                     
-                    <rect x="260" y="420" width="110" height="40" rx="6" fill="#5F6368" />
-                    <text x="315" y="445" text-anchor="middle" fill="white" font-size="12">逻辑回归</text>
+                    <rect x="108" y="455" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="153" y="475" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">XGBoost</text>
                     
-                    <rect x="390" y="420" width="110" height="40" rx="6" fill="#5F6368" />
-                    <text x="445" y="445" text-anchor="middle" fill="white" font-size="12">K-Means</text>
+                    <!-- ========== 无监督学习 子分类 ========== -->
+                    <line x1="307" y1="233" x2="307" y2="260" stroke="#E8704A" stroke-width="1.5" marker-end="url(#arrow-orange)" />
+                    <text x="307" y="253" text-anchor="middle" fill="#E8704A" font-size="10">▼ 聚类 / 降维 / 关联</text>
                     
-                    <rect x="520" y="420" width="110" height="40" rx="6" fill="#5F6368" />
-                    <text x="575" y="445" text-anchor="middle" fill="white" font-size="12">DQN</text>
+                    <rect x="210" y="265" width="90" height="35" rx="6" fill="#FFF3E0" stroke="#E8704A" stroke-width="1.5" />
+                    <text x="255" y="287" text-anchor="middle" fill="#E8704A" font-size="12" font-weight="bold">聚类</text>
                     
-                    <rect x="650" y="420" width="110" height="40" rx="6" fill="#5F6368" />
-                    <text x="705" y="445" text-anchor="middle" fill="white" font-size="12">自编码器</text>
+                    <rect x="308" y="265" width="90" height="35" rx="6" fill="#FFF3E0" stroke="#E8704A" stroke-width="1.5" />
+                    <text x="353" y="287" text-anchor="middle" fill="#E8704A" font-size="12" font-weight="bold">降维</text>
+
+                    <!-- 无监督学习算法 -->
+                    <line x1="307" y1="300" x2="307" y2="330" stroke="#E8704A" stroke-width="1.5" marker-end="url(#arrow-orange)" />
                     
-                    <!-- 连接线：模型类型 → 算法 -->
-                    <line x1="260" y1="310" x2="105" y2="360" stroke="#34A853" stroke-width="1.5" stroke-dasharray="5,5" />
-                    <line x1="260" y1="310" x2="235" y2="360" stroke="#34A853" stroke-width="1.5" stroke-dasharray="5,5" />
-                    <line x1="260" y1="310" x2="365" y2="360" stroke="#34A853" stroke-width="1.5" stroke-dasharray="5,5" />
-                    <line x1="260" y1="310" x2="185" y2="420" stroke="#34A853" stroke-width="1.5" stroke-dasharray="5,5" />
-                    <line x1="260" y1="310" x2="315" y2="420" stroke="#34A853" stroke-width="1.5" stroke-dasharray="5,5" />
+                    <rect x="210" y="335" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="255" y="355" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">K-Means</text>
                     
-                    <line x1="540" y1="310" x2="495" y2="360" stroke="#34A853" stroke-width="1.5" stroke-dasharray="5,5" />
-                    <line x1="540" y1="310" x2="625" y2="360" stroke="#34A853" stroke-width="1.5" stroke-dasharray="5,5" />
-                    <line x1="540" y1="310" x2="755" y2="360" stroke="#34A853" stroke-width="1.5" stroke-dasharray="5,5" />
-                    <line x1="540" y1="310" x2="575" y2="420" stroke="#34A853" stroke-width="1.5" stroke-dasharray="5,5" />
-                    <line x1="540" y1="310" x2="705" y2="420" stroke="#34A853" stroke-width="1.5" stroke-dasharray="5,5" />
+                    <rect x="308" y="335" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="353" y="355" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">层次聚类</text>
                     
-                    <!-- 第五层：任务类型 -->
-                    <rect x="50" y="500" width="140" height="50" rx="8" fill="#FBBC04" />
-                    <text x="120" y="515" text-anchor="middle" fill="white" font-size="12">分类</text>
-                    <text x="120" y="535" text-anchor="middle" fill="white" font-size="10">（离散输出）</text>
+                    <rect x="210" y="375" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="255" y="395" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">PCA</text>
                     
-                    <rect x="220" y="500" width="140" height="50" rx="8" fill="#FBBC04" />
-                    <text x="290" y="515" text-anchor="middle" fill="white" font-size="12">回归</text>
-                    <text x="290" y="535" text-anchor="middle" fill="white" font-size="10">（连续输出）</text>
+                    <rect x="308" y="375" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="353" y="395" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">DBSCAN</text>
                     
-                    <rect x="390" y="500" width="140" height="50" rx="8" fill="#FBBC04" />
-                    <text x="460" y="515" text-anchor="middle" fill="white" font-size="12">聚类</text>
-                    <text x="460" y="535" text-anchor="middle" fill="white" font-size="10">（无标签分组）</text>
+                    <rect x="210" y="415" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="255" y="435" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">自编码器</text>
                     
-                    <rect x="560" y="500" width="140" height="50" rx="8" fill="#FBBC04" />
-                    <text x="630" y="515" text-anchor="middle" fill="white" font-size="12">降维</text>
-                    <text x="630" y="535" text-anchor="middle" fill="white" font-size="10">（特征压缩）</text>
+                    <rect x="308" y="415" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="353" y="435" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">GAN</text>
                     
-                    <!-- 箭头4 -->
-                    <line x1="450" y1="460" x2="450" y2="500" stroke="#5F6368" stroke-width="2" marker-end="url(#arrowhead)" />
-                    <text x="450" y="485" text-anchor="middle" fill="#5F6368" font-size="14">按任务类型分类</text>
+                    <!-- ========== 半监督学习说明 ========== -->
+                    <line x1="497" y1="233" x2="497" y2="260" stroke="#E8704A" stroke-width="1.5" marker-end="url(#arrow-orange)" />
+                    <rect x="420" y="265" width="155" height="55" rx="6" fill="#FFF3E0" stroke="#FF8A65" stroke-width="1.5" />
+                    <text x="497" y="285" text-anchor="middle" fill="#BF360C" font-size="11">少量标签数据</text>
+                    <text x="497" y="302" text-anchor="middle" fill="#BF360C" font-size="11">+ 大量无标签数据</text>
+                    <text x="497" y="316" text-anchor="middle" fill="#E65100" font-size="9">（介于监督与无监督之间）</text>
                     
-                    <!-- 第六层：应用场景 -->
-                    <rect x="100" y="570" width="150" height="50" rx="8" fill="#9C27B0" />
-                    <text x="175" y="585" text-anchor="middle" fill="white" font-size="12">图像分类</text>
-                    <text x="175" y="600" text-anchor="middle" fill="white" font-size="10">（CNN）</text>
+                    <!-- ========== 强化学习 子分类 ========== -->
+                    <line x1="687" y1="233" x2="687" y2="260" stroke="#E8704A" stroke-width="1.5" marker-end="url(#arrow-orange)" />
+                    <text x="687" y="253" text-anchor="middle" fill="#E8704A" font-size="10">▼ 基于价值 / 基于策略</text>
                     
-                    <rect x="280" y="570" width="150" height="50" rx="8" fill="#9C27B0" />
-                    <text x="355" y="585" text-anchor="middle" fill="white" font-size="12">自然语言处理</text>
-                    <text x="355" y="600" text-anchor="middle" fill="white" font-size="10">（Transformer）</text>
+                    <rect x="610" y="265" width="90" height="35" rx="6" fill="#FFF3E0" stroke="#E8704A" stroke-width="1.5" />
+                    <text x="655" y="287" text-anchor="middle" fill="#E8704A" font-size="12" font-weight="bold">基于价值</text>
                     
-                    <rect x="460" y="570" width="150" height="50" rx="8" fill="#9C27B0" />
-                    <text x="535" y="585" text-anchor="middle" fill="white" font-size="12">语音识别</text>
-                    <text x="535" y="600" text-anchor="middle" fill="white" font-size="10">（RNN/Transformer）</text>
+                    <rect x="708" y="265" width="90" height="35" rx="6" fill="#FFF3E0" stroke="#E8704A" stroke-width="1.5" />
+                    <text x="753" y="287" text-anchor="middle" fill="#E8704A" font-size="12" font-weight="bold">基于策略</text>
                     
-                    <rect x="640" y="570" width="150" height="50" rx="8" fill="#9C27B0" />
-                    <text x="715" y="585" text-anchor="middle" fill="white" font-size="12">游戏AI</text>
-                    <text x="715" y="600" text-anchor="middle" fill="white" font-size="10">（强化学习）</text>
+                    <!-- 强化学习算法 -->
+                    <line x1="687" y1="300" x2="687" y2="330" stroke="#E8704A" stroke-width="1.5" marker-end="url(#arrow-orange)" />
                     
-                    <!-- 箭头5 -->
-                    <line x1="450" y1="620" x2="450" y2="650" stroke="#5F6368" stroke-width="2" marker-end="url(#arrowhead)" />
-                    <text x="450" y="640" text-anchor="middle" fill="#5F6368" font-size="14">应用场景</text>
+                    <rect x="610" y="335" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="655" y="355" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">Q-Learning</text>
                     
-                    <!-- 说明框 -->
-                    <rect x="50" y="660" width="800" height="35" rx="5" fill="#F8F9FA" stroke="#E8EAED" />
-                    <text x="70" y="680" font-size="11" fill="#5F6368">💡 核心洞察：同一算法可用于不同学习方式（如神经网络可用于监督学习、无监督学习、强化学习）</text>
-                    <text x="70" y="695" font-size="11" fill="#5F6368">📌 关系说明：虚线表示"可用"关系，实线箭头表示"分类"关系</text>
+                    <rect x="708" y="335" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="753" y="355" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">Policy Grad</text>
+                    
+                    <rect x="610" y="375" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="655" y="395" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">DQN</text>
+                    
+                    <rect x="708" y="375" width="90" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="753" y="395" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">PPO</text>
+
+                    <rect x="610" y="415" width="188" height="32" rx="6" fill="#FFCCBC" />
+                    <text x="704" y="435" text-anchor="middle" fill="#BF360C" font-size="11" font-weight="bold">Actor-Critic (A2C/A3C)</text>
+
+                    <!-- ========== 自监督学习说明 ========== -->
+                    <line x1="867" y1="233" x2="867" y2="260" stroke="#FF8A65" stroke-width="1.5" marker-end="url(#arrow-orange)" />
+                    <rect x="790" y="265" width="155" height="70" rx="6" fill="#FFF3E0" stroke="#FF8A65" stroke-width="1.5" />
+                    <text x="867" y="285" text-anchor="middle" fill="#BF360C" font-size="11">从数据本身生成标签</text>
+                    <text x="867" y="302" text-anchor="middle" fill="#BF360C" font-size="11">（预测被遮蔽的部分）</text>
+                    <text x="867" y="319" text-anchor="middle" fill="#BF360C" font-size="11">GPT、BERT等预训练</text>
+                    <text x="867" y="330" text-anchor="middle" fill="#E65100" font-size="9">（当前大模型的核心训练方式）</text>
+                    
+                    <!-- ========== 分隔线：深度学习 ========== -->
+                    <line x1="30" y1="510" x2="930" y2="510" stroke="#1A73E8" stroke-width="2" stroke-dasharray="8,4" />
+                    <rect x="380" y="498" width="200" height="24" rx="5" fill="white" />
+                    <text x="480" y="516" text-anchor="middle" fill="#1A73E8" font-size="14" font-weight="bold">▼ 深度学习（Deep Learning）</text>
+                    <text x="480" y="540" text-anchor="middle" fill="#5F6368" font-size="11">多层神经网络自动学习特征表示</text>
+                    
+                    <!-- ========== 深度学习模型架构 ========== -->
+                    <rect x="30" y="555" width="140" height="55" rx="10" fill="#34A853" filter="url(#shadow)" />
+                    <text x="100" y="578" text-anchor="middle" fill="white" font-size="14" font-weight="bold">CNN</text>
+                    <text x="100" y="598" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">卷积神经网络</text>
+                    
+                    <rect x="185" y="555" width="140" height="55" rx="10" fill="#34A853" filter="url(#shadow)" />
+                    <text x="255" y="578" text-anchor="middle" fill="white" font-size="14" font-weight="bold">RNN / LSTM</text>
+                    <text x="255" y="598" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">循环神经网络</text>
+                    
+                    <rect x="340" y="555" width="140" height="55" rx="10" fill="#34A853" filter="url(#shadow)" />
+                    <text x="410" y="578" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Transformer</text>
+                    <text x="410" y="598" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">注意力机制</text>
+                    
+                    <rect x="495" y="555" width="140" height="55" rx="10" fill="#34A853" filter="url(#shadow)" />
+                    <text x="565" y="578" text-anchor="middle" fill="white" font-size="14" font-weight="bold">GAN</text>
+                    <text x="565" y="598" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">生成对抗网络</text>
+                    
+                    <rect x="650" y="555" width="140" height="55" rx="10" fill="#34A853" filter="url(#shadow)" />
+                    <text x="720" y="578" text-anchor="middle" fill="white" font-size="14" font-weight="bold">扩散模型</text>
+                    <text x="720" y="598" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">Diffusion Model</text>
+                    
+                    <rect x="805" y="555" width="130" height="55" rx="10" fill="#34A853" filter="url(#shadow)" />
+                    <text x="870" y="578" text-anchor="middle" fill="white" font-size="14" font-weight="bold">GNN</text>
+                    <text x="870" y="598" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">图神经网络</text>
+                    
+                    <!-- ========== CNN子架构 ========== -->
+                    <line x1="100" y1="610" x2="100" y2="635" stroke="#34A853" stroke-width="1.5" marker-end="url(#arrow-green)" />
+                    <rect x="20" y="640" width="75" height="25" rx="5" fill="#C8E6C9" />
+                    <text x="57" y="657" text-anchor="middle" fill="#1B5E20" font-size="10">LeNet</text>
+                    <rect x="100" y="640" width="75" height="25" rx="5" fill="#C8E6C9" />
+                    <text x="137" y="657" text-anchor="middle" fill="#1B5E20" font-size="10">AlexNet</text>
+                    <rect x="20" y="670" width="75" height="25" rx="5" fill="#C8E6C9" />
+                    <text x="57" y="687" text-anchor="middle" fill="#1B5E20" font-size="10">VGGNet</text>
+                    <rect x="100" y="670" width="75" height="25" rx="5" fill="#C8E6C9" />
+                    <text x="137" y="687" text-anchor="middle" fill="#1B5E20" font-size="10">ResNet</text>
+                    <rect x="60" y="700" width="75" height="25" rx="5" fill="#C8E6C9" />
+                    <text x="97" y="717" text-anchor="middle" fill="#1B5E20" font-size="10">ViT</text>
+                    
+                    <!-- ========== Transformer子架构 ========== -->
+                    <line x1="410" y1="610" x2="410" y2="635" stroke="#34A853" stroke-width="1.5" marker-end="url(#arrow-green)" />
+                    <rect x="340" y="640" width="75" height="25" rx="5" fill="#C8E6C9" />
+                    <text x="377" y="657" text-anchor="middle" fill="#1B5E20" font-size="10">BERT</text>
+                    <rect x="420" y="640" width="75" height="25" rx="5" fill="#C8E6C9" />
+                    <text x="457" y="657" text-anchor="middle" fill="#1B5E20" font-size="10">GPT</text>
+                    <rect x="340" y="670" width="75" height="25" rx="5" fill="#C8E6C9" />
+                    <text x="377" y="687" text-anchor="middle" fill="#1B5E20" font-size="10">T5</text>
+                    <rect x="420" y="670" width="75" height="25" rx="5" fill="#C8E6C9" />
+                    <text x="457" y="687" text-anchor="middle" fill="#1B5E20" font-size="10">LLaMA</text>
+                    <rect x="340" y="700" width="75" height="25" rx="5" fill="#C8E6C9" />
+                    <text x="377" y="717" text-anchor="middle" fill="#1B5E20" font-size="10">Claude</text>
+                    <rect x="420" y="700" width="75" height="25" rx="5" fill="#C8E6C9" />
+                    <text x="457" y="717" text-anchor="middle" fill="#1B5E20" font-size="10">Gemini</text>
+                    
+                    <!-- ========== 应用场景层 ========== -->
+                    <line x1="30" y1="745" x2="930" y2="745" stroke="#9C27B0" stroke-width="2" stroke-dasharray="8,4" />
+                    <rect x="390" y="733" width="180" height="24" rx="5" fill="white" />
+                    <text x="480" y="751" text-anchor="middle" fill="#9C27B0" font-size="14" font-weight="bold">▼ 典型应用场景</text>
+                    
+                    <rect x="30" y="765" width="145" height="50" rx="10" fill="#CE93D8" filter="url(#shadow)" />
+                    <text x="102" y="787" text-anchor="middle" fill="white" font-size="13" font-weight="bold">计算机视觉</text>
+                    <text x="102" y="804" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="10">图像分类、目标检测</text>
+                    
+                    <rect x="190" y="765" width="145" height="50" rx="10" fill="#CE93D8" filter="url(#shadow)" />
+                    <text x="262" y="787" text-anchor="middle" fill="white" font-size="13" font-weight="bold">自然语言处理</text>
+                    <text x="262" y="804" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="10">翻译、摘要、对话</text>
+                    
+                    <rect x="350" y="765" width="145" height="50" rx="10" fill="#CE93D8" filter="url(#shadow)" />
+                    <text x="422" y="787" text-anchor="middle" fill="white" font-size="13" font-weight="bold">语音识别</text>
+                    <text x="422" y="804" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="10">Whisper、语音助手</text>
+                    
+                    <rect x="510" y="765" width="145" height="50" rx="10" fill="#CE93D8" filter="url(#shadow)" />
+                    <text x="582" y="787" text-anchor="middle" fill="white" font-size="13" font-weight="bold">AI生成</text>
+                    <text x="582" y="804" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="10">文生图、文生视频</text>
+                    
+                    <rect x="670" y="765" width="145" height="50" rx="10" fill="#CE93D8" filter="url(#shadow)" />
+                    <text x="742" y="787" text-anchor="middle" fill="white" font-size="13" font-weight="bold">游戏与决策</text>
+                    <text x="742" y="804" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="10">AlphaGo、游戏AI</text>
+                    
+                    <rect x="830" y="765" width="110" height="50" rx="10" fill="#CE93D8" filter="url(#shadow)" />
+                    <text x="885" y="787" text-anchor="middle" fill="white" font-size="13" font-weight="bold">推荐系统</text>
+                    <text x="885" y="804" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="10">电商、内容</text>
+                    
+                    <!-- ========== 相互关系说明 ========== -->
+                    <rect x="30" y="830" width="900" height="42" rx="8" fill="#E8F0FE" stroke="#1A73E8" stroke-width="1" />
+                    <text x="50" y="849" font-size="12" fill="#1A73E8" font-weight="bold">💡 关系说明：</text>
+                    <text x="160" y="849" font-size="11" fill="#333">① 学习方式是"怎么训练"，模型架构是"用什么结构"，两者是正交关系——同一模型可用多种学习方式训练</text>
+                    <text x="160" y="865" font-size="11" fill="#333">② 深度学习是机器学习的子集，用多层神经网络替代传统特征工程 ③ 自监督学习是当前大模型预训练的主流范式</text>
                 </svg>
-                <div class="image-caption">图3-1：机器学习知识体系框架图（如果此图与您提供的图片不符，请告诉我具体差异）</div>
-            </div>
-            
-            <div class="concept-map">
-                <h3>概念关系详细解析</h3>
-                
-                <div class="concept-note">
-                    <strong>💡 核心洞察：</strong><br>
-                    1. <strong>神经网络≠深度学习</strong>：神经网络是一种模型架构，可以用于监督学习（如图像分类）、无监督学习（如自编码器）、强化学习（如DQN）<br>
-                    2. <strong>贝叶斯≠朴素贝叶斯</strong>：<a href="https://baike.baidu.com/item/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86" target="_blank" class="baike-link">贝叶斯推断</a>是一种概率框架，朴素贝叶斯是其中的一个具体算法（假设特征条件独立）<br>
-                    3. <strong>同个算法，不同用法</strong>：一个神经网络可以用监督学习的方式训练（如分类任务），也可以用无监督学习的方式训练（如自编码器）
-                </div>
+                <div class="image-caption">图3-1：机器学习完整分类框架图 — 展示了学习方式、模型架构与应用场景的完整关系</div>
             </div>
             
             <h3>3.4 🔍 深度解析：常见混淆概念</h3>
@@ -729,6 +867,7 @@
                   &nbsp;&nbsp;✅ 用监督学习训练神经网络：图像分类（有标签）<br>
                   &nbsp;&nbsp;✅ 用无监督学习训练神经网络：<a href="https://baike.baidu.com/item/%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8" target="_blank" class="baike-link">自编码器</a>（无标签，学习重构输入）<br>
                   &nbsp;&nbsp;✅ 用强化学习训练神经网络：<a href="https://baike.baidu.com/item/DQN" target="_blank" class="baike-link">DQN</a>（通过奖励信号学习）<br>
+                  &nbsp;&nbsp;✅ 用自监督学习训练神经网络：GPT/BERT（从数据自身生成标签）<br>
                 - <strong>结论</strong>：神经网络是"剑"，监督学习是"剑法"。一把剑可以用多种剑法来挥舞。
             </div>
             
@@ -736,14 +875,20 @@
                 <strong>⚠️ 混淆点2：贝叶斯框架与贝叶斯算法的关系</strong><br><br>
                 <strong>问题</strong>：传统机器学习中的"贝叶斯学习"与监督学习中的"朴素贝叶斯算法"是什么关系？<br><br>
                 <strong>解答</strong>：<br>
-                - <strong>贝叶斯推断</strong>是一种<strong>概率框架</strong>（思想体系），基于贝叶斯定理更新概率估计<br>
-                - <strong>朴素贝叶斯</strong>是贝叶斯推断框架下的一个<strong>具体算法</strong>，它假设特征之间条件独立<br>
+                - <strong><a href="https://baike.baidu.com/item/%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%8E%A8%E6%96%AD" target="_blank" class="baike-link">贝叶斯推断</a></strong>是一种<strong>概率框架</strong>（思想体系），基于贝叶斯定理更新概率估计<br>
+                - <strong><a href="https://baike.baidu.com/item/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF" target="_blank" class="baike-link">朴素贝叶斯</a></strong>是贝叶斯推断框架下的一个<strong>具体算法</strong>，它假设特征之间条件独立<br>
                 - <strong>关系</strong>：朴素贝叶斯是贝叶斯推断的简化版本，还有其他更复杂的贝叶斯模型（如<a href="https://baike.baidu.com/item/%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%BD%91%E7%BB%9C" target="_blank" class="baike-link">贝叶斯网络</a>、<a href="https://baike.baidu.com/item/%E9%AB%98%E6%96%AF%E8%BF%87%E7%A8%8B" target="_blank" class="baike-link">高斯过程</a>）<br>
-                - <strong>举例</strong>：<br>
-                  &nbsp;&nbsp;✅ 朴素贝叶斯：假设特征独立，计算简单，用于文本分类<br>
-                  &nbsp;&nbsp;✅ 贝叶斯网络：用图模型表示变量间的依赖关系，更灵活<br>
-                  &nbsp;&nbsp;✅ 高斯过程：用于回归和分类的非参数贝叶斯方法<br>
                 - <strong>结论</strong>：贝叶斯框架是"武术哲学"，朴素贝叶斯是"具体招式"。哲学指导招式，但招式只是哲学的一种体现。
+            </div>
+            
+            <div class="warning-box">
+                <strong>⚠️ 混淆点3：自监督学习 vs 无监督学习</strong><br><br>
+                <strong>问题</strong>：自监督学习是不是无监督学习的一种？<br><br>
+                <strong>解答</strong>：<br>
+                - <strong>无监督学习</strong>：完全没有标签，目标是发现数据中的模式（聚类、降维）<br>
+                - <strong>自监督学习</strong>：从数据本身"制造"标签（如预测句子中被遮蔽的词），然后用监督学习的方式训练<br>
+                - <strong>关键区别</strong>：自监督学习虽然不使用人工标签，但使用了"自动生成的标签"，本质上是监督学习的一种特殊形式<br>
+                - <strong>当前地位</strong>：<a href="https://baike.baidu.com/item/GPT" target="_blank" class="baike-link">GPT</a>、<a href="https://baike.baidu.com/item/BERT" target="_blank" class="baike-link">BERT</a>等大模型都通过自监督学习进行预训练，这是当前AI最重要的训练范式之一
             </div>
             
             <div class="tip-box">
@@ -755,7 +900,7 @@
                         <th>比喻</th>
                     </tr>
                     <tr>
-                        <td>神经网络</td>
+                        <td><a href="https://baike.baidu.com/item/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C" target="_blank" class="baike-link">神经网络</a></td>
                         <td>模型架构（工具）</td>
                         <td>一把剑</td>
                     </tr>
@@ -765,19 +910,24 @@
                         <td>一种剑法</td>
                     </tr>
                     <tr>
-                        <td>深度学习</td>
+                        <td><a href="https://baike.baidu.com/item/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0" target="_blank" class="baike-link">深度学习</a></td>
                         <td>使用深层神经网络的机器学习</td>
                         <td>用剑的高级武学</td>
                     </tr>
                     <tr>
-                        <td>贝叶斯框架</td>
+                        <td><a href="https://baike.baidu.com/item/%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%8E%A8%E6%96%AD" target="_blank" class="baike-link">贝叶斯框架</a></td>
                         <td>概率推断思想</td>
                         <td>武术哲学</td>
                     </tr>
                     <tr>
-                        <td>朴素贝叶斯</td>
+                        <td><a href="https://baike.baidu.com/item/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF" target="_blank" class="baike-link">朴素贝叶斯</a></td>
                         <td>具体算法</td>
                         <td>具体招式</td>
+                    </tr>
+                    <tr>
+                        <td>自监督学习</td>
+                        <td>从数据自身制造标签来训练</td>
+                        <td>自己给自己出题练剑</td>
                     </tr>
                 </table>
             </div>
@@ -787,26 +937,34 @@
             <h4>监督学习算法</h4>
             <p><strong>1. <a href="https://baike.baidu.com/item/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92" target="_blank" class="baike-link">线性回归</a></strong>：用于连续值预测，通过最小化均方误差来拟合直线或超平面。</p>
             <p><strong>2. <a href="https://baike.baidu.com/item/%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92" target="_blank" class="baike-link">逻辑回归</a></strong>：用于二分类问题，通过Sigmoid函数将输出映射到[0,1]区间。</p>
-            <p><strong>3. 决策树</strong>：通过递归分割特征空间来构建树形模型，易于理解和解释。</p>
+            <p><strong>3. <a href="https://baike.baidu.com/item/%E5%86%B3%E7%AD%96%E6%A0%91" target="_blank" class="baike-link">决策树</a></strong>：通过递归分割特征空间来构建树形模型，易于理解和解释。</p>
             <p><strong>4. <a href="https://baike.baidu.com/item/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA" target="_blank" class="baike-link">支持向量机（SVM）</a></strong>：寻找最优超平面来分隔不同类别的数据点。</p>
-            <p><strong>5. 朴素贝叶斯</strong>：基于贝叶斯定理和特征条件独立假设的分类方法。</p>
-            <p><strong>6. 神经网络</strong>：由多个神经元组成，通过<a href="https://baike.baidu.com/item/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD" target="_blank" class="baike-link">反向传播</a>算法学习权重（可用于监督/无监督/强化学习）。</p>
+            <p><strong>5. <a href="https://baike.baidu.com/item/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF" target="_blank" class="baike-link">朴素贝叶斯</a></strong>：基于贝叶斯定理和特征条件独立假设的分类方法。</p>
+            <p><strong>6. <a href="https://baike.baidu.com/item/K%E8%BF%91%E9%82%BB%E7%AE%97%E6%B3%95" target="_blank" class="baike-link">KNN（K近邻）</a></strong>：通过计算样本间距离进行分类或回归，"近朱者赤，近墨者黑"。</p>
+            <p><strong>7. <a href="https://baike.baidu.com/item/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97" target="_blank" class="baike-link">随机森林</a></strong>：多棵决策树集成，通过投票或平均提高预测精度和稳定性。</p>
+            <p><strong>8. <a href="https://baike.baidu.com/item/XGBoost" target="_blank" class="baike-link">XGBoost</a></strong>：梯度提升树的优化实现，结构化数据竞赛之王。</p>
+            <p><strong>9. <a href="https://baike.baidu.com/item/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C" target="_blank" class="baike-link">神经网络</a></strong>：由多个神经元组成，通过<a href="https://baike.baidu.com/item/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD" target="_blank" class="baike-link">反向传播</a>算法学习权重（可用于监督/无监督/强化/自监督学习）。</p>
             
             <h4>无监督学习算法</h4>
-            <p><strong>1. <a href="https://baike.baidu.com/item/K-%E5%9D%87%E5%80%BC" target="_blank" class="baike-link">K-Means聚类</a></strong>：将数据分为K个簇，使得簇内距离最小，簇间距离最大。</p>
-            <p><strong>2. 层次聚类</strong>：构建聚类的层次结构，可以是自底向上或自顶向下。</p>
-            <p><strong>3. 主成分分析（PCA）</strong>：通过线性变换将高维数据投影到低维空间。</p>
-            <p><strong>4. 自编码器</strong>：神经网络的一种，用于学习数据的压缩表示（无监督学习）。</p>
+            <p><strong>1. <a href="https://baike.baidu.com/item/K-%E5%9D%87%E5%80%BC%E7%AE%97%E6%B3%95" target="_blank" class="baike-link">K-Means聚类</a></strong>：将数据分为K个簇，使得簇内距离最小，簇间距离最大。</p>
+            <p><strong>2. <a href="https://baike.baidu.com/item/%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB" target="_blank" class="baike-link">层次聚类</a></strong>：构建聚类的层次结构，可以是自底向上或自顶向下。</p>
+            <p><strong>3. <a href="https://baike.baidu.com/item/%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90" target="_blank" class="baike-link">主成分分析（PCA）</a></strong>：通过线性变换将高维数据投影到低维空间。</p>
+            <p><strong>4. <a href="https://baike.baidu.com/item/DBSCAN" target="_blank" class="baike-link">DBSCAN</a></strong>：基于密度的聚类算法，能发现任意形状的簇并识别噪声。</p>
+            <p><strong>5. <a href="https://baike.baidu.com/item/%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8" target="_blank" class="baike-link">自编码器</a></strong>：神经网络的一种，用于学习数据的压缩表示（无监督学习）。</p>
+            <p><strong>6. <a href="https://baike.baidu.com/item/%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C" target="_blank" class="baike-link">GAN（生成对抗网络）</a></strong>：生成器和判别器对抗训练，用于生成逼真的数据（图像、文本等）。</p>
             
             <h4>强化学习算法</h4>
-            <p><strong>1. <a href="https://baike.baidu.com/item/Q-learning" target="_blank" class="baike-link">Q-Learning</a></strong>：通过Q表记录状态-动作价值，迭代更新策略。</p>
-            <p><strong>2. Deep Q Network（DQN）</strong>：结合深度学习和Q-Learning，用神经网络近似Q函数。</p>
-            <p><strong>3. <a href="https://baike.baidu.com/item/%E7%AD%96%E7%95%A5%E6%A2%AF%E5%BA%A6" target="_blank" class="baike-link">Policy Gradient</a></strong>：直接优化策略函数，通过梯度上升最大化期望回报。</p>
+            <p><strong>1. <a href="https://baike.baidu.com/item/Q%E5%AD%A6%E4%B9%A0" target="_blank" class="baike-link">Q-Learning</a></strong>：通过Q表记录状态-动作价值，迭代更新策略。</p>
+            <p><strong>2. <a href="https://baike.baidu.com/item/DQN" target="_blank" class="baike-link">Deep Q Network（DQN）</a></strong>：结合深度学习和Q-Learning，用神经网络近似Q函数。</p>
+            <p><strong>3. <a href="https://baike.baidu.com/item/%E7%AD%96%E7%95%A5%E6%A2%AF%E5%BA%A6%E6%B3%95" target="_blank" class="baike-link">Policy Gradient</a></strong>：直接优化策略函数，通过梯度上升最大化期望回报。</p>
+            <p><strong>4. <a href="https://baike.baidu.com/item/PPO" target="_blank" class="baike-link">PPO（近端策略优化）</a></strong>：稳定高效的策略梯度算法，ChatGPT RLHF训练的核心算法。</p>
+            <p><strong>5. <a href="https://baike.baidu.com/item/Actor-Critic" target="_blank" class="baike-link">Actor-Critic</a></strong>：结合策略梯度（Actor）和价值函数（Critic），学习效率更高。</p>
             
             <div class="highlight-box">
                 <strong>💡 关键要点：</strong><br>
                 - 机器学习 = 模型架构 + 学习方式 + 任务类型<br>
-                - 神经网络可以用不同的学习方式训练（监督/无监督/强化）<br>
+                - 神经网络可以用不同的学习方式训练（监督/无监督/强化/自监督）<br>
+                - 自监督学习是当前大模型预训练的主流范式（GPT、BERT等）<br>
                 - 选择算法时，需要考虑数据量、特征维度、可解释性需求等因素
             </div>
         </div>
@@ -829,11 +987,11 @@
             <p><strong>核心思想</strong>：通过卷积层局部连接和权值共享，有效提取图像的局部特征。</p>
             <p><strong>典型架构</strong>：</p>
             <ul>
-                <li><strong>LeNet-5</strong>（1998）：最早的CNN，用于手写数字识别</li>
-                <li><strong>AlexNet</strong>（2012）：引入ReLU和Dropout，赢ImageNet竞赛</li>
-                <li><strong>VGGNet</strong>（2014）：使用小卷积核（3×3）堆叠，加深网络</li>
+                <li><strong><a href="https://baike.baidu.com/item/LeNet" target="_blank" class="baike-link">LeNet-5</a></strong>（1998）：最早的CNN，用于手写数字识别</li>
+                <li><strong><a href="https://baike.baidu.com/item/AlexNet" target="_blank" class="baike-link">AlexNet</a></strong>（2012）：引入ReLU和Dropout，赢ImageNet竞赛</li>
+                <li><strong><a href="https://baike.baidu.com/item/VGGNet" target="_blank" class="baike-link">VGGNet</a></strong>（2014）：使用小卷积核（3×3）堆叠，加深网络</li>
                 <li><strong><a href="https://baike.baidu.com/item/ResNet" target="_blank" class="baike-link">ResNet</a></strong>（2015）：引入残差连接，解决梯度消失问题，可训练上百层网络</li>
-                <li><strong>EfficientNet</strong>（2019）：平衡深度、宽度、分辨率，效率更高</li>
+                <li><strong><a href="https://baike.baidu.com/item/EfficientNet" target="_blank" class="baike-link">EfficientNet</a></strong>（2019）：平衡深度、宽度、分辨率，效率更高</li>
             </ul>
             <p><strong>应用领域</strong>：图像分类、目标检测、图像分割、人脸识别等。</p>
             
@@ -842,8 +1000,8 @@
             <p><strong>典型变体</strong>：</p>
             <ul>
                 <li><strong><a href="https://baike.baidu.com/item/LSTM" target="_blank" class="baike-link">LSTM（长短期记忆网络）</a></strong>：引入门控机制，解决长期依赖问题</li>
-                <li><strong>GRU（门控循环单元）</strong>：简化版LSTM，计算效率更高</li>
-                <li><strong>双向RNN</strong>：同时考虑过去和未来的信息</li>
+                <li><strong><a href="https://baike.baidu.com/item/GRU" target="_blank" class="baike-link">GRU（门控循环单元）</a></strong>：简化版LSTM，计算效率更高</li>
+                <li><strong><a href="https://baike.baidu.com/item/%E5%8F%8C%E5%90%91RNN" target="_blank" class="baike-link">双向RNN</a></strong>：同时考虑过去和未来的信息</li>
             </ul>
             <p><strong>应用领域</strong>：自然语言处理、语音识别、时间序列预测等。</p>
             <p><strong>局限性</strong>：难以并行化，长距离依赖问题仍存在。</p>
@@ -861,26 +1019,26 @@
             <p><strong>典型模型</strong>：</p>
             <ul>
                 <li><strong><a href="https://baike.baidu.com/item/BERT" target="_blank" class="baike-link">BERT</a></strong>（2018）：双向Transformer编码器，用于自然语言理解</li>
-                <li><strong>GPT系列</strong>：Transformer解码器，用于生成任务</li>
-                <li><strong>T5</strong>：编码器-解码器架构，统一所有NLP任务为文本生成</li>
-                <li><strong>ViT（Vision Transformer）</strong>：将图像分割为patch，用Transformer处理</li>
+                <li><strong><a href="https://baike.baidu.com/item/GPT" target="_blank" class="baike-link">GPT系列</a></strong>：Transformer解码器，用于生成任务</li>
+                <li><strong><a href="https://baike.baidu.com/item/T5" target="_blank" class="baike-link">T5</a></strong>：编码器-解码器架构，统一所有NLP任务为文本生成</li>
+                <li><strong><a href="https://baike.baidu.com/item/ViT" target="_blank" class="baike-link">ViT（Vision Transformer）</a></strong>：将图像分割为patch，用Transformer处理</li>
             </ul>
             
             <h3>4.5 <a href="https://baike.baidu.com/item/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B" target="_blank" class="baike-link">大语言模型</a>（LLM）</h3>
             <p><strong>定义</strong>：参数量巨大（通常超过10亿）、训练数据海量（通常超过1TB文本）的语言模型。</p>
             <p><strong>关键技术</strong>：</p>
             <ul>
-                <li><strong>预训练-微调范式</strong>：先在大规模无标注数据上预训练，再在特定任务上微调</li>
-                <li><strong>提示工程（Prompt Engineering）</strong>：通过设计提示词引导模型生成期望输出</li>
-                <li><strong>人类反馈强化学习（RLHF）</strong>：通过人类反馈优化模型行为</li>
-                <li><strong>上下文学习（In-Context Learning）</strong>：无需梯度更新，通过上下文示例学习</li>
+                <li><strong><a href="https://baike.baidu.com/item/%E9%A2%84%E8%AE%AD%E7%BB%83-%E5%BE%AE%E8%B0%83" target="_blank" class="baike-link">预训练-微调范式</a></strong>：先在大规模无标注数据上预训练，再在特定任务上微调</li>
+                <li><strong><a href="https://baike.baidu.com/item/%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B" target="_blank" class="baike-link">提示工程（Prompt Engineering）</a></strong>：通过设计提示词引导模型生成期望输出</li>
+                <li><strong><a href="https://baike.baidu.com/item/%E4%BA%BA%E7%B1%BB%E5%8F%8D%E9%A6%88%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0" target="_blank" class="baike-link">人类反馈强化学习（RLHF）</a></strong>：通过人类反馈优化模型行为</li>
+                <li><strong><a href="https://baike.baidu.com/item/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%AD%A6%E4%B9%A0" target="_blank" class="baike-link">上下文学习（In-Context Learning）</a></strong>：无需梯度更新，通过上下文示例学习</li>
             </ul>
             <p><strong>代表模型</strong>：</p>
             <ul>
-                <li><strong>GPT-3/4/5.5</strong>（OpenAI）：生成能力强大，支持少样本学习</li>
-                <li><strong>Claude系列</strong>（Anthropic）：注重安全性和可控性</li>
-                <li><strong>Gemini</strong>（Google）：多模态能力，支持文本、图像、音频</li>
-                <li><strong>Llama系列</strong>（Meta）：开源大模型，推动AI民主化</li>
+                <li><strong>GPT-3/4/5.5</strong>（<a href="https://baike.baidu.com/item/OpenAI" target="_blank" class="baike-link">OpenAI</a>）：生成能力强大，支持少样本学习</li>
+                <li><strong><a href="https://baike.baidu.com/item/Claude" target="_blank" class="baike-link">Claude</a>系列</strong>（<a href="https://baike.baidu.com/item/Anthropic" target="_blank" class="baike-link">Anthropic</a>）：注重安全性和可控性</li>
+                <li><strong><a href="https://baike.baidu.com/item/Gemini" target="_blank" class="baike-link">Gemini</a></strong>（Google）：多模态能力，支持文本、图像、音频</li>
+                <li><strong><a href="https://baike.baidu.com/item/Llama" target="_blank" class="baike-link">Llama</a>系列</strong>（Meta）：开源大模型，推动AI民主化</li>
             </ul>
             
             <div class="tip-box">
@@ -897,135 +1055,161 @@
             <h2>第五章：AI最新进展（2023-2026）</h2>
             
             <div class="highlight-box">
-                <strong>📢 重要说明：</strong>本章节持续更新中。如果您发现某些模型信息不准确或已过时，请告诉我更新。
+                <strong>📢 重要说明：</strong>本章节持续更新中。每条资讯都附有可点击的外部链接，方便您深入了解详情。如果您发现某些模型信息不准确或已过时，请告诉我更新。
             </div>
             
             <h3>5.1 大语言模型的突破</h3>
             
-            <h4>GPT-5.5（OpenAI）⚡ 最新！</h4>
-            <p><strong>发布时间</strong>：2026年4月24日</p>
-            <p><strong>官方定位</strong>：迄今为止最智能、使用最直观的模型，面向实际工作与智能体（Agent）的新型智能。</p>
-            <p><strong>主要特性</strong>：</p>
-            <ul>
-                <li><strong>Agentic能力</strong>：能够理解模糊、多部分的任务，自主规划并执行多步复杂任务</li>
-                <li><strong>编程能力提升</strong>：在代码编写/调试、跨工具协同方面表现卓越</li>
-                <li><strong>科研能力</strong>：在GeneBench（遗传数据分析）和BioBench（生物信息学）基准测试中领先</li>
-                <li><strong>性能与成本平衡</strong>：比GPT-5.4更大更强，但每个token延迟与GPT-5.4匹配，完成任务所需token大幅减少</li>
-                <li><strong>硬件协同设计</strong>：与英伟达联合设计，运行在英伟达Blackwell架构（GB200 NVL72机架级系统）上</li>
-            </ul>
-            <p><strong>基准测试成绩</strong>：</p>
-            <ul>
-                <li><strong>Terminal-Bench 2.0</strong>：82.7%准确率</li>
-                <li><strong>SWE-Bench Pro</strong>：58.6%准确率（评估GitHub问题修复能力）</li>
-                <li><strong>Artificial Analysis Coding Index</strong>：以一半成本提供SOTA（最先进）智能水平</li>
-            </ul>
-            <p><strong>成本效率</strong>：</p>
-            <ul>
-                <li>API定价：$5/百万输入tokens（约34.2元人民币）</li>
-                <li>Pro版本：$30/百万输入tokens</li>
-                <li>英伟达基准测试：相比上一代系统，每百万token成本降至1/35，每兆瓦输出token提升50倍</li>
-            </ul>
-            <p><strong>应用场景</strong>：</p>
-            <ul>
-                <li>编程助手（集成到Codex编程助手）</li>
-                <li>科研工作流管理</li>
-                <li>药物研发（协助发现Ramsey数的新证明）</li>
-                <li>办公任务自动化（审计7万页税务文件等）</li>
-            </ul>
-            <p><strong>可及性</strong>：已向ChatGPT Plus、Pro、Business、Enterprise用户开放；Codex平台用户也可使用。</p>
+            <!-- GPT-5.5 -->
+            <div class="model-section">
+                <h4>GPT-5.5（OpenAI） <span class="tag-latest">最新</span>
+                    <a href="https://news.qq.com/rain/a/20260424A028RQ00" target="_blank" class="news-link">腾讯新闻详细解读</a>
+                    <a href="https://finance.sina.com.cn/world/2026-04-24/doc-inhvpusn8195278.shtml" target="_blank" class="news-link">新浪财经报道</a>
+                    <a href="https://www.nbd.com.cn/articles/2026-04-24/4357176.html" target="_blank" class="news-link">每日经济新闻</a>
+                </h4>
+                <div class="model-meta">发布时间：2026年4月24日</div>
+                <p><strong>官方定位</strong>：迄今为止最智能、使用最直观的模型，面向实际工作与智能体（Agent）的新型智能。</p>
+                <p><strong>主要特性</strong>：</p>
+                <ul>
+                    <li><strong>Agentic能力</strong>：能够理解模糊、多部分的任务，自主规划并执行多步复杂任务</li>
+                    <li><strong>编程能力提升</strong>：在代码编写/调试、跨工具协同方面表现卓越</li>
+                    <li><strong>科研能力</strong>：在GeneBench（遗传数据分析）和BioBench（生物信息学）基准测试中领先</li>
+                    <li><strong>性能与成本平衡</strong>：比GPT-5.4更大更强，但每个token延迟与GPT-5.4匹配，完成任务所需token大幅减少</li>
+                    <li><strong>硬件协同设计</strong>：与英伟达联合设计，运行在英伟达Blackwell架构（GB200 NVL72机架级系统）上</li>
+                </ul>
+                <p><strong>成本效率</strong>：API定价$5/百万输入tokens（约34.2元人民币）；英伟达基准测试：每百万token成本降至1/35，每兆瓦输出token提升50倍。</p>
+            </div>
             
-            <h4>GPT-4o系列（OpenAI）</h4>
-            <p><strong>发布时间</strong>：2024年5月</p>
-            <p><strong>主要特性</strong>：</p>
-            <ul>
-                <li>多模态能力：支持图像、音频、文本输入和输出</li>
-                <li>速度提升：比GPT-4快2倍，成本降低50%</li>
-                <li>多语言支持：非英语语言能力提升显著</li>
-            </ul>
-            <p><strong>应用</strong>：ChatGPT Plus、API服务、实时语音对话</p>
+            <!-- GPT-4o -->
+            <div class="model-section">
+                <h4>GPT-4o系列（OpenAI）
+                    <a href="https://www.thepaper.cn/newsDetail_forward_27370901" target="_blank" class="news-link">澎湃新闻</a>
+                </h4>
+                <div class="model-meta">发布时间：2024年5月</div>
+                <p><strong>主要特性</strong>：多模态能力（图像、音频、文本输入输出），速度提升2倍，成本降低50%，非英语语言能力显著提升。</p>
+                <p><strong>应用</strong>：ChatGPT Plus、API服务、实时语音对话。</p>
+            </div>
             
-            <h4>Claude Opus 4.7（Anthropic）⚡ 最新！</h4>
-            <p><strong>发布时间</strong>：2026年4月</p>
-            <p><strong>主要特性</strong>：</p>
-            <ul>
-                <li>安全性优先：通过Constitutional AI减少有害输出</li>
-                <li>长上下文：支持200K+ tokens上下文</li>
-                <li>多模态：支持图像分析</li>
-                <li>真实性：在减少幻觉方面表现优异</li>
-                <li>编程能力：在编程基准测试中表现出色</li>
-            </ul>
+            <!-- Claude Opus 4.7 -->
+            <div class="model-section">
+                <h4>Claude Opus 4.7（Anthropic） <span class="tag-latest">最新</span>
+                    <a href="https://www.anthropic.com/claude/opus" target="_blank" class="news-link">官方介绍</a>
+                    <a href="https://zhuanlan.zhihu.com/p/2028869325151375398" target="_blank" class="news-link">知乎全面解读</a>
+                    <a href="https://www.datalearner.com/blog/anthropic-claude-opus-4-7-software-engineering" target="_blank" class="news-link">DataLearner报道</a>
+                </h4>
+                <div class="model-meta">发布时间：2026年4月16日</div>
+                <p><strong>主要特性</strong>：</p>
+                <ul>
+                    <li><strong>编程能力大幅提升</strong>：相比Opus 4.6，高级软件工程能力提升13%</li>
+                    <li><strong>视觉理解增强</strong>：视觉分辨率提升3倍，能处理更复杂的图像分析任务</li>
+                    <li><strong>长上下文</strong>：支持1M token上下文窗口</li>
+                    <li><strong>定价</strong>：$5/$25 per M token，与Opus 4.6一致</li>
+                    <li><strong>安全性</strong>：通过Constitutional AI减少有害输出，减少幻觉</li>
+                </ul>
+            </div>
             
-            <h4>Gemini 3.1 Pro（Google）⚡ 最新！</h4>
-            <p><strong>发布时间</strong>：2026年4月</p>
-            <p><strong>主要特性</strong>：</p>
-            <ul>
-                <li>原生多模态：从训练开始就支持文本、图像、音频、视频</li>
-                <li>无限上下文（实验性）：支持超长文档处理</li>
-                <li>与Google生态深度集成：搜索、办公套件、Android</li>
-                <li>三种规模：Ultra（最大）、Pro（平衡）、Nano（设备端）</li>
-            </ul>
+            <!-- Gemini 3.1 Pro -->
+            <div class="model-section">
+                <h4>Gemini 3.1 Pro（Google） <span class="tag-latest">最新</span>
+                    <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/" target="_blank" class="news-link">Google官方博客</a>
+                    <a href="https://news.qq.com/rain/a/20260220A029HK00" target="_blank" class="news-link">腾讯新闻</a>
+                    <a href="https://www.ithome.com/0/942/071.htm" target="_blank" class="news-link">IT之家报道</a>
+                </h4>
+                <div class="model-meta">发布时间：2026年2月19日</div>
+                <p><strong>主要特性</strong>：</p>
+                <ul>
+                    <li><strong>推理能力翻倍</strong>：在推理基准测试中分数翻倍，达到行业领先水平</li>
+                    <li><strong>SVG代码生成</strong>：新增SVG代码生成功能，可输出可编辑的UI交互动效</li>
+                    <li><strong>深度研究智能体</strong>：支持Deep Research与Deep Research Max，可连接专有数据源</li>
+                    <li><strong>原生多模态</strong>：从训练开始就支持文本、图像、音频、视频</li>
+                    <li><strong>与Google生态深度集成</strong>：搜索、办公套件、Android、NotebookLM</li>
+                </ul>
+            </div>
             
-            <h4>GPT-4系列（OpenAI）</h4>
-            <p><strong>发布时间</strong>：2023年3月</p>
-            <p><strong>主要特性</strong>：</p>
-            <ul>
-                <li>多模态能力：支持图像输入和文本输出</li>
-                <li>推理能力提升：在众多专业和学术基准上达到人类水平</li>
-                <li>上下文长度：支持32K+ tokens</li>
-                <li>多语言支持：非英语语言能力提升显著</li>
-            </ul>
-            <p><strong>应用</strong>：ChatGPT Plus、API服务、插件生态</p>
+            <!-- GPT-4 -->
+            <div class="model-section">
+                <h4>GPT-4系列（OpenAI）
+                    <a href="https://openai.com/research/gpt-4" target="_blank" class="news-link">OpenAI官方</a>
+                </h4>
+                <div class="model-meta">发布时间：2023年3月</div>
+                <p><strong>主要特性</strong>：多模态能力（图像输入和文本输出），推理能力达到人类水平，支持32K+ tokens上下文，多语言支持显著提升。</p>
+            </div>
             
-            <h4>Claude 3系列（Anthropic）</h4>
-            <p><strong>发布时间</strong>：2024年</p>
-            <p><strong>主要特性</strong>：</p>
-            <ul>
-                <li>安全性优先：通过Constitutional AI减少有害输出</li>
-                <li>长上下文：支持200K tokens上下文</li>
-                <li>多模态：支持图像分析</li>
-                <li>真实性：在减少幻觉方面表现优异</li>
-            </ul>
+            <!-- Claude 3 -->
+            <div class="model-section">
+                <h4>Claude 3系列（Anthropic）
+                    <a href="https://www.anthropic.com/news/claude-3-family" target="_blank" class="news-link">Anthropic官方</a>
+                </h4>
+                <div class="model-meta">发布时间：2024年3月</div>
+                <p><strong>主要特性</strong>：安全性优先（Constitutional AI），长上下文（200K tokens），多模态（图像分析），真实性方面表现优异。</p>
+            </div>
             
-            <h4>Gemini（Google）</h4>
-            <p><strong>发布时间</strong>：2023年12月</p>
-            <p><strong>主要特性</strong>：</p>
-            <ul>
-                <li>原生多模态：从训练开始就支持文本、图像、音频、视频</li>
-                <li>三种规模：Ultra（最大）、Pro（平衡）、Nano（设备端）</li>
-                <li>与Google生态集成：搜索、办公套件、Android</li>
-            </ul>
+            <!-- Gemini 1.0 -->
+            <div class="model-section">
+                <h4>Gemini 1.0/2.0（Google）
+                    <a href="https://blog.google/technology/ai/gemini-ai/" target="_blank" class="news-link">Google官方</a>
+                </h4>
+                <div class="model-meta">发布时间：2023年12月（1.0）/ 2024年（2.0）</div>
+                <p><strong>主要特性</strong>：原生多模态，三种规模（Ultra/Pro/Nano），与Google生态集成（搜索、办公套件、Android）。</p>
+            </div>
             
-            <h4>Llama 3/4系列（Meta）</h4>
-            <p><strong>发布时间</strong>：2024年（Llama 3），2025年（Llama 4）</p>
-            <p><strong>主要特性</strong>：</p>
-            <ul>
-                <li>开源：允许商用（Llama 2/3/4）</li>
-                <li>性能优异：在开源模型中领先</li>
-                <li>社区生态：基于Llama的衍生模型众多</li>
-            </ul>
-            <p><strong>影响</strong>：推动了开源AI运动，降低了AI应用门槛</p>
+            <!-- Llama 4 -->
+            <div class="model-section">
+                <h4>Llama 4系列（Meta）
+                    <a href="https://news.qq.com/rain/a/20250407A02SEG00" target="_blank" class="news-link">腾讯新闻</a>
+                    <a href="https://zhuanlan.zhihu.com/p/1892715722716722662" target="_blank" class="news-link">知乎解析</a>
+                </h4>
+                <div class="model-meta">发布时间：2025年4月5日</div>
+                <p><strong>主要特性</strong>：</p>
+                <ul>
+                    <li><strong>四个模型</strong>：Scout、Maverick、Behemoth等</li>
+                    <li><strong>MoE架构</strong>：首次引入Mixture-of-Experts专家混合架构</li>
+                    <li><strong>原生多模态</strong>：支持多模态输入，支持10M超长上下文</li>
+                    <li><strong>开源</strong>：允许商用，推动AI民主化</li>
+                </ul>
+            </div>
             
             <h3>5.2 多模态AI的崛起</h3>
             <p>2023-2026年，AI从单一文本走向多模态理解和生成。</p>
             
             <h4>文本-图像生成</h4>
             <ul>
-                <li><strong>Midjourney V6</strong>：图像生成质量极高，艺术创作首选</li>
-                <li><strong>DALL-E 3</strong>：与ChatGPT集成，提示词理解能力强</li>
-                <li><strong>Stable Diffusion XL</strong>：开源，可本地部署和微调</li>
+                <li><strong><a href="https://baike.baidu.com/item/Midjourney" target="_blank" class="baike-link">Midjourney V6</a></strong>：图像生成质量极高，艺术创作首选
+                    <a href="https://www.midjourney.com" target="_blank" class="news-link">官网</a>
+                </li>
+                <li><strong><a href="https://baike.baidu.com/item/DALL-E" target="_blank" class="baike-link">DALL-E 3</a></strong>：与ChatGPT集成，提示词理解能力强
+                    <a href="https://openai.com/dall-e-3" target="_blank" class="news-link">OpenAI官方</a>
+                </li>
+                <li><strong><a href="https://baike.baidu.com/item/Stable%20Diffusion" target="_blank" class="baike-link">Stable Diffusion XL</a></strong>：开源，可本地部署和微调
+                    <a href="https://stability.ai" target="_blank" class="news-link">Stability AI官网</a>
+                </li>
             </ul>
             
             <h4>文本-视频生成</h4>
             <ul>
-                <li><strong>Sora（OpenAI）</strong>：生成高质量60秒视频，物理世界理解能力强</li>
-                <li><strong>Runway Gen-2</strong>：视频编辑和生成工具，专业创作者使用</li>
-                <li><strong>Pika</strong>：新兴视频生成工具，操作简单</li>
+                <li><strong><a href="https://baike.baidu.com/item/Sora" target="_blank" class="baike-link">Sora（OpenAI）</a></strong> <span class="tag-deprecated">已关停</span>：2024年初引发轰动，但已于2026年3月24日关停
+                    <a href="https://news.qq.com/rain/a/20260325A06LHC00" target="_blank" class="news-link">关停报道</a>
+                    <a href="https://www.thepaper.cn/newsDetail_forward_32826836" target="_blank" class="news-link">澎湃新闻</a>
+                </li>
+                <li><strong><a href="https://baike.baidu.com/item/Runway" target="_blank" class="baike-link">Runway Gen-2/3</a></strong>：视频编辑和生成工具，专业创作者使用
+                    <a href="https://runwayml.com" target="_blank" class="news-link">官网</a>
+                </li>
+                <li><strong><a href="https://baike.baidu.com/item/Pika" target="_blank" class="baike-link">Pika</a></strong>：新兴视频生成工具，操作简单
+                    <a href="https://pika.art" target="_blank" class="news-link">官网</a>
+                </li>
+                <li><strong><a href="https://baike.baidu.com/item/%E5%8F%AF%E7%81%B5" target="_blank" class="baike-link">可灵（Kling）</a></strong>：快手推出的视频生成模型，在Sora关停后成为重要替代
+                    <a href="https://klingai.com" target="_blank" class="news-link">官网</a>
+                </li>
             </ul>
             
             <h4>语音-文本模型</h4>
             <ul>
-                <li><strong>Whisper（OpenAI）</strong>：多语言语音识别，准确率高</li>
-                <li><strong>ElevenLabs</strong>：语音克隆和生成，逼真度高</li>
+                <li><strong><a href="https://baike.baidu.com/item/Whisper" target="_blank" class="baike-link">Whisper（OpenAI）</a></strong>：多语言语音识别，准确率高
+                    <a href="https://openai.com/research/whisper" target="_blank" class="news-link">OpenAI官方</a>
+                </li>
+                <li><strong><a href="https://baike.baidu.com/item/ElevenLabs" target="_blank" class="baike-link">ElevenLabs</a></strong>：语音克隆和生成，逼真度高
+                    <a href="https://elevenlabs.io" target="_blank" class="news-link">官网</a>
+                </li>
             </ul>
             
             <h3>5.3 <a href="https://baike.baidu.com/item/AI%20Agent" target="_blank" class="baike-link">AI Agent</a>（智能体）</h3>
@@ -1042,12 +1226,31 @@
             
             <h4>代表系统</h4>
             <ul>
-                <li><strong>AutoGPT</strong>：早期探索，自主拆分任务并执行</li>
-                <li><strong>AgentGPT</strong>：基于Web的自主Agent平台</li>
-                <li><strong>LangChain Agent</strong>：开发框架，支持多种Agent架构</li>
-                <li><strong>OpenAI Assistants API</strong>：官方Agent开发接口</li>
-                <li><strong>Devin（Cognition AI）</strong>：AI软件工程师，能够独立完成编程任务</li>
+                <li><strong><a href="https://baike.baidu.com/item/AutoGPT" target="_blank" class="baike-link">AutoGPT</a></strong>：早期探索，自主拆分任务并执行</li>
+                <li><strong>AgentGPT</strong>：基于Web的自主Agent平台
+                    <a href="https://agentgpt.reworkd.ai" target="_blank" class="news-link">官网</a>
+                </li>
+                <li><strong><a href="https://baike.baidu.com/item/LangChain" target="_blank" class="baike-link">LangChain Agent</a></strong>：开发框架，支持多种Agent架构
+                    <a href="https://langchain.com" target="_blank" class="news-link">官网</a>
+                </li>
+                <li><strong>OpenAI Assistants API</strong>：官方Agent开发接口
+                    <a href="https://platform.openai.com/docs/assistants" target="_blank" class="news-link">官方文档</a>
+                </li>
+                <li><strong><a href="https://baike.baidu.com/item/Devin" target="_blank" class="baike-link">Devin（Cognition AI）</a></strong>：AI软件工程师，能够独立完成编程任务</li>
                 <li><strong>OpenAI Codex</strong>：集成GPT-5.5的编程Agent平台</li>
+            </ul>
+            
+            <h4>最新动态</h4>
+            <ul>
+                <li>腾讯多款Agent智能体亮相2026数字中国建设峰会
+                    <a href="https://finance.sina.com.cn/tech/digi/2026-04-29/doc-inhwefuw7881849.shtml" target="_blank" class="news-link">新浪报道</a>
+                </li>
+                <li>DeepMind揭示AI Agent安全风险："智能体陷阱"
+                    <a href="https://news.qq.com/rain/a/20260420A02TYR00" target="_blank" class="news-link">腾讯新闻</a>
+                </li>
+                <li>开源AI Agent框架Hermes Agent接入腾讯元宝
+                    <a href="https://news.qq.com/rain/a/20260429A0522Z00" target="_blank" class="news-link">腾讯新闻</a>
+                </li>
             </ul>
             
             <h3>5.4 边缘AI与小型化模型</h3>
@@ -1063,7 +1266,9 @@
             <h4>代表模型</h4>
             <ul>
                 <li><strong>Phi-3（Microsoft）</strong>：38亿参数，性能媲美大模型</li>
-                <li><strong>Gemma（Google）</strong>：基于Gemini技术，轻量级开源模型</li>
+                <li><strong>Gemma（Google）</strong>：基于Gemini技术，轻量级开源模型
+                    <a href="https://ai.google.dev/gemma" target="_blank" class="news-link">官网</a>
+                </li>
                 <li><strong>MobileVLM</strong>：面向移动设备的多模态模型</li>
             </ul>
             
@@ -1072,7 +1277,9 @@
             
             <h4>全球监管动态</h4>
             <ul>
-                <li><strong>欧盟AI法案</strong>（2024）：全球首部全面AI监管法律，按风险分级监管</li>
+                <li><strong>欧盟AI法案</strong>（2024）：全球首部全面AI监管法律，按风险分级监管
+                    <a href="https://www.europarl.europa.eu/topics/en/article/20240313STO01504/eu-ai-act" target="_blank" class="news-link">欧洲议会</a>
+                </li>
                 <li><strong>美国行政令</strong>（2023）：要求AI公司分享安全测试结果</li>
                 <li><strong>中国生成式AI规范</strong>（2023）：要求AI生成内容标识、安全评估</li>
             </ul>
@@ -1104,7 +1311,7 @@
             <ul>
                 <li><strong>《<a href="https://baike.baidu.com/item/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%EF%BC%9A%E4%B8%80%E7%A7%8D%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95" target="_blank" class="baike-link">人工智能：一种现代方法</a>》（第4版）</strong> - Stuart Russell & Peter Norvig
                     <br>👉 经典教材，全面覆盖AI各领域，适合打基础</li>
-                <li><strong>《机器学习》（周志华著）</strong>
+                <li><strong>《<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%91%A8%E5%BF%97%E5%8D%8E%E8%91%97%EF%BC%89" target="_blank" class="baike-link">机器学习》（周志华著）</a></strong>
                     <br>👉 中文经典教材，被称为"西瓜书"，讲解清晰</li>
                 <li><strong>《<a href="https://baike.baidu.com/item/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%8A%82%E8%AF%BE%E6%96%87%E6%9C%AC" target="_blank" class="baike-link">深度学习</a>（花书）</strong> - Ian Goodfellow等
                     <br>👉 深度学习奠基性教材，理论性强</li>
@@ -1116,7 +1323,7 @@
                     <br>👉 理论+代码实践，有配套视频教程，适合工程师</li>
                 <li><strong>《自然语言处理入门》</strong> - 何晗
                     <br>👉 中文NLP入门佳作，代码示例丰富</li>
-                <li><strong>《<a href="https://baike.baidu.com/item/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0" target="_blank" class="baike-link">强化学习</a>（第2版）》</strong> - Richard Sutton & Andrew Barto
+                <li><strong>《<a href="https://baike.baidu.com/item/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%EF%BC%88%E7%AC%AC%E9%A1%BF%E8%91%97%EF%BC%89" target="_blank" class="baike-link">强化学习</a>（第2版）》</strong> - Richard Sutton & Andrew Barto
                     <br>👉 强化学习圣经，理论基础扎实</li>
             </ul>
             
@@ -1133,9 +1340,13 @@
             <h4>综合课程</h4>
             <ul>
                 <li><strong>吴恩达《机器学习》</strong>（Coursera）
-                    <br>👉 最受欢迎的ML入门课，讲解直观易懂</li>
+                    <br>👉 最受欢迎的ML入门课，讲解直观易懂
+                    <a href="https://www.coursera.org/learn/machine-learning" target="_blank" class="news-link">课程链接</a>
+                </li>
                 <li><strong>吴恩达《深度学习专项》</strong>（Coursera）
-                    <br>👉 5门课，从基础到CNN、RNN、结构化ML项目</li>
+                    <br>👉 5门课，从基础到CNN、RNN、结构化ML项目
+                    <a href="https://www.coursera.org/specializations/deep-learning" target="_blank" class="news-link">课程链接</a>
+                </li>
                 <li><strong>李宏毅《机器学习》</strong>（YouTube）
                     <br>👉 中文课程，幽默风趣，覆盖前沿技术</li>
             </ul>
@@ -1143,7 +1354,9 @@
             <h4>专项课程</h4>
             <ul>
                 <li><strong>《自然语言处理》</strong>（DeepLearning.AI）
-                    <br>👉 专注NLP，覆盖RNN、Attention、Transformer</li>
+                    <br>👉 专注NLP，覆盖RNN、Attention、Transformer
+                    <a href="https://www.deeplearning.ai/courses/natural-language-processing-specialization/" target="_blank" class="news-link">课程链接</a>
+                </li>
                 <li><strong>《强化学习》</strong>（David Silver，YouTube）
                     <br>👉 DeepMind研究员的课程，深入浅出</li>
             </ul>
@@ -1163,17 +1376,17 @@
                     <td>研究、快速原型</td>
                 </tr>
                 <tr>
-                    <td><strong>TensorFlow</strong></td>
+                    <td><strong><a href="https://baike.baidu.com/item/TensorFlow" target="_blank" class="baike-link">TensorFlow</a></strong></td>
                     <td>工业级部署，生态完善</td>
                     <td>生产环境、移动端</td>
                 </tr>
                 <tr>
-                    <td><strong>JAX</strong></td>
+                    <td><strong><a href="https://baike.baidu.com/item/JAX" target="_blank" class="baike-link">JAX</a></strong></td>
                     <td>Google出品，自动微分+加速</td>
                     <td>高性能计算、研究</td>
                 </tr>
                 <tr>
-                    <td><strong>PaddlePaddle</strong></td>
+                    <td><strong><a href="https://baike.baidu.com/item/PaddlePaddle" target="_blank" class="baike-link">PaddlePaddle</a></strong></td>
                     <td>百度出品，中文支持好</td>
                     <td>中文NLP、国产替代</td>
                 </tr>
@@ -1181,8 +1394,12 @@
             
             <h4>专用工具</h4>
             <ul>
-                <li><strong>Hugging Face Transformers</strong>：预训练模型库，支持PyTorch/TensorFlow</li>
-                <li><strong>LangChain</strong>：LLM应用开发框架，支持Agent、工具调用</li>
+                <li><strong><a href="https://baike.baidu.com/item/Hugging%20Face" target="_blank" class="baike-link">Hugging Face Transformers</a></strong>：预训练模型库，支持PyTorch/TensorFlow
+                    <a href="https://huggingface.co" target="_blank" class="news-link">官网</a>
+                </li>
+                <li><strong>LangChain</strong>：LLM应用开发框架，支持Agent、工具调用
+                    <a href="https://langchain.com" target="_blank" class="news-link">官网</a>
+                </li>
                 <li><strong>PyTorch Lightning</strong>：简化PyTorch代码，工程化友好</li>
                 <li><strong>Weights & Biases</strong>：实验跟踪、可视化工具</li>
             </ul>
@@ -1191,7 +1408,7 @@
             
             <h4>路径1：学术研究方向</h4>
             <ol>
-                <li><strong>基础</strong>：线性代数、概率统计、微积分</li>
+                <li><strong>基础</strong>：<a href="https://baike.baidu.com/item/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0" target="_blank" class="baike-link">线性代数</a>、<a href="https://baike.baidu.com/item/%E6%A6%82%E7%8E%87%E8%AE%BA" target="_blank" class="baike-link">概率统计</a>、<a href="https://baike.baidu.com/item/%E5%BE%AE%E7%A7%AF%E5%88%86" target="_blank" class="baike-link">微积分</a></li>
                 <li><strong>机器学习</strong>：吴恩达课程 + 西瓜书</li>
                 <li><strong>深度学习</strong>：花书 + 动手学深度学习</li>
                 <li><strong>专项</strong>：选择NLP/CV/RL某一方向深入</li>
@@ -1201,7 +1418,7 @@
             <h4>路径2：工程应用方向</h4>
             <ol>
                 <li><strong>编程基础</strong>：Python、NumPy、Pandas</li>
-                <li><strong>机器学习</strong>：Scikit-learn实战</li>
+                <li><strong>机器学习</strong>：<a href="https://baike.baidu.com/item/Scikit-learn" target="_blank" class="baike-link">Scikit-learn</a>实战</li>
                 <li><strong>深度学习</strong>：PyTorch/TensorFlow + 动手学深度学习</li>
                 <li><strong>工程化</strong>：模型部署、优化、监控</li>
                 <li><strong>领域应用</strong>：选择某一行业（金融/医疗/电商）深耕</li>
