@@ -1116,45 +1116,6 @@
             
             <h3>3.5 常见算法详解</h3>
             
-            <h4>监督学习算法</h4>
-            <p><strong>1. <a href="https://baike.baidu.com/item/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92" target="_blank" class="baike-link">线性回归</a></strong>：用于连续值预测，通过最小化均方误差来拟合直线或超平面。</p>
-            <p><strong>2. <a href="https://baike.baidu.com/item/%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92" target="_blank" class="baike-link">逻辑回归</a></strong>：用于二分类问题，通过Sigmoid函数将输出映射到[0,1]区间。</p>
-            <p><strong>3. <a href="https://baike.baidu.com/item/%E5%86%B3%E7%AD%96%E6%A0%91" target="_blank" class="baike-link">决策树</a></strong>：通过递归分割特征空间来构建树形模型，易于理解和解释。</p>
-            <p><strong>4. <a href="https://baike.baidu.com/item/%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA" target="_blank" class="baike-link">支持向量机（SVM）</a></strong>：寻找最优超平面来分隔不同类别的数据点。</p>
-            <p><strong>5. <a href="https://baike.baidu.com/item/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF" target="_blank" class="baike-link">朴素贝叶斯</a></strong>：基于贝叶斯定理和特征条件独立假设的分类方法。</p>
-            <p><strong>6. <a href="https://baike.baidu.com/item/K%E8%BF%91%E9%82%BB%E7%AE%97%E6%B3%95" target="_blank" class="baike-link">KNN（K近邻）</a></strong>：通过计算样本间距离进行分类或回归，"近朱者赤，近墨者黑"。</p>
-            <p><strong>7. <a href="https://baike.baidu.com/item/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97" target="_blank" class="baike-link">随机森林</a></strong>：多棵决策树集成，通过投票或平均提高预测精度和稳定性。</p>
-            <p><strong>8. <a href="https://baike.baidu.com/item/XGBoost" target="_blank" class="baike-link">XGBoost</a></strong>：梯度提升树的优化实现，结构化数据竞赛之王。</p>
-            <p><strong>9. <a href="https://baike.baidu.com/item/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C" target="_blank" class="baike-link">神经网络</a></strong>：由多个神经元组成，通过<a href="https://baike.baidu.com/item/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD" target="_blank" class="baike-link">反向传播</a>算法学习权重（可用于监督/无监督/强化/自监督学习）。</p>
-            
-            <h4>无监督学习算法</h4>
-            <p><strong>1. <a href="https://baike.baidu.com/item/K-%E5%9D%87%E5%80%BC%E7%AE%97%E6%B3%95" target="_blank" class="baike-link">K-Means聚类</a></strong>：将数据分为K个簇，使得簇内距离最小，簇间距离最大。</p>
-            <p><strong>2. <a href="https://baike.baidu.com/item/%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB" target="_blank" class="baike-link">层次聚类</a></strong>：构建聚类的层次结构，可以是自底向上或自顶向下。</p>
-            <p><strong>3. <a href="https://baike.baidu.com/item/%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90" target="_blank" class="baike-link">主成分分析（PCA）</a></strong>：通过线性变换将高维数据投影到低维空间。</p>
-            <p><strong>4. <a href="https://baike.baidu.com/item/DBSCAN" target="_blank" class="baike-link">DBSCAN</a></strong>：基于密度的聚类算法，能发现任意形状的簇并识别噪声。</p>
-            <p><strong>5. <a href="https://baike.baidu.com/item/%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8" target="_blank" class="baike-link">自编码器</a></strong>：神经网络的一种，用于学习数据的压缩表示（无监督学习）。</p>
-            <p><strong>6. <a href="https://baike.baidu.com/item/%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C" target="_blank" class="baike-link">GAN（生成对抗网络）</a></strong>：生成器和判别器对抗训练，用于生成逼真的数据（图像、文本等）。</p>
-            
-            <h4>强化学习算法</h4>
-            <p><strong>1. <a href="https://baike.baidu.com/item/Q%E5%AD%A6%E4%B9%A0" target="_blank" class="baike-link">Q-Learning</a></strong>：通过Q表记录状态-动作价值，迭代更新策略。</p>
-            <p><strong>2. <a href="https://baike.baidu.com/item/DQN" target="_blank" class="baike-link">Deep Q Network（DQN）</a></strong>：结合深度学习和Q-Learning，用神经网络近似Q函数。</p>
-            <p><strong>3. <a href="https://baike.baidu.com/item/%E7%AD%96%E7%95%A5%E6%A2%AF%E5%BA%A6%E6%B3%95" target="_blank" class="baike-link">Policy Gradient</a></strong>：直接优化策略函数，通过梯度上升最大化期望回报。</p>
-            <p><strong>4. <a href="https://baike.baidu.com/item/PPO" target="_blank" class="baike-link">PPO（近端策略优化）</a></strong>：稳定高效的策略梯度算法，ChatGPT RLHF训练的核心算法。</p>
-            <p><strong>5. <a href="https://baike.baidu.com/item/Actor-Critic" target="_blank" class="baike-link">Actor-Critic</a></strong>：结合策略梯度（Actor）和价值函数（Critic），学习效率更高。</p>
-            
-            <div class="highlight-box">
-                <strong>💡 关键要点：</strong><br>
-                - 机器学习 = 模型架构 + 学习方式 + 任务类型<br>
-                - 神经网络可以用不同的学习方式训练（监督/无监督/强化/自监督）<br>
-                - 自监督学习是当前大模型预训练的主流范式（GPT、BERT等）<br>
-                - 选择算法时，需要考虑数据量、特征维度、可解释性需求等因素
-            </div>
-        </div>
-
-        <!-- 第四章 -->
-        <div class="chapter" id="ch4">
-            <h2>第四章：深度学习</h2>
-            
             <h3>4.1 什么是深度学习？</h3>
             <p>深度学习是机器学习的一个子领域，它通过<strong>多层神经网络</strong>来学习数据的层次化表示。相比传统机器学习，深度学习能够自动提取特征，无需人工设计特征工程。</p>
             
@@ -1265,26 +1226,6 @@
             
             <!-- GPT-4o -->
             
-                <h4>GPT-5.5（OpenAI） <span class="tag-latest">最新</span></h4>
-                <div class="news-links-group">
-                    <a href="https://news.qq.com/rain/a/20260424A028RQ00" target="_blank" class="news-link">腾讯新闻详细解读</a>
-                    <a href="https://finance.sina.com.cn/world/2026-04-24/doc-inhvpusn8195278.shtml" target="_blank" class="news-link">新浪财经报道</a>
-                    <a href="https://www.nbd.com.cn/articles/2026-04-24/4357176.html" target="_blank" class="news-link">每日经济新闻</a>
-                </div>
-                <div class="model-meta">发布时间：2026年4月24日</div>
-                <p><strong>官方定位</strong>：迄今为止最智能、使用最直观的模型，面向实际工作与智能体（Agent）的新型智能。</p>
-                <p><strong>主要特性</strong>：</p>
-                <ul>
-                    <li><strong>Agentic能力</strong>：能够理解模糊、多部分的任务，自主规划并执行多步复杂任务</li>
-                    <li><strong>编程能力提升</strong>：在代码编写/调试、跨工具协同方面表现卓越</li>
-                    <li><strong>科研能力</strong>：在GeneBench（遗传数据分析）和BioBench（生物信息学）基准测试中领先</li>
-                    <li><strong>性能与成本平衡</strong>：比GPT-5.4更大更强，但每个token延迟与GPT-5.4匹配，完成任务所需token大幅减少</li>
-                    <li><strong>硬件协同设计</strong>：与英伟达联合设计，运行在英伟达Blackwell架构（GB200 NVL72机架级系统）上</li>
-                </ul>
-                <p><strong>成本效率</strong>：API定价$5/百万输入tokens（约34.2元人民币）；英伟达基准测试：每百万token成本降至1/35，每兆瓦输出token提升50倍。</p>
-            </div>
-            
-            <!-- GPT-4o -->
             <div class="model-section">
                 <h4>GPT-4o系列（OpenAI）</h4>
                 <div class="news-links-group">
@@ -1297,16 +1238,6 @@
             
             <!-- Claude Opus 4.7 -->
             
-                <h4>GPT-4o系列（OpenAI）</h4>
-                <div class="news-links-group">
-                    <a href="https://www.thepaper.cn/newsDetail_forward_27370901" target="_blank" class="news-link">澎湃新闻</a>
-                </div>
-                <div class="model-meta">发布时间：2024年5月</div>
-                <p><strong>主要特性</strong>：多模态能力（图像、音频、文本输入输出），速度提升2倍，成本降低50%，非英语语言能力显著提升。</p>
-                <p><strong>应用</strong>：ChatGPT Plus、API服务、实时语音对话。</p>
-            </div>
-            
-            <!-- Claude Opus 4.7 -->
             <div class="model-section">
                 <h4>Claude Opus 4.7（Anthropic） <span class="tag-latest">最新</span></h4>
                 <div class="news-links-group">
@@ -1327,24 +1258,6 @@
             
             <!-- Gemini 3.1 Pro -->
             
-                <h4>Claude Opus 4.7（Anthropic） <span class="tag-latest">最新</span></h4>
-                <div class="news-links-group">
-                    <a href="https://www.anthropic.com/claude/opus" target="_blank" class="news-link">官方介绍</a>
-                    <a href="https://zhuanlan.zhihu.com/p/2028869325151375398" target="_blank" class="news-link">知乎全面解读</a>
-                    <a href="https://www.datalearner.com/blog/anthropic-claude-opus-4-7-software-engineering" target="_blank" class="news-link">DataLearner报道</a>
-                </div>
-                <div class="model-meta">发布时间：2026年4月16日</div>
-                <p><strong>主要特性</strong>：</p>
-                <ul>
-                    <li><strong>编程能力大幅提升</strong>：相比Opus 4.6，高级软件工程能力提升13%</li>
-                    <li><strong>视觉理解增强</strong>：视觉分辨率提升3倍，能处理更复杂的图像分析任务</li>
-                    <li><strong>长上下文</strong>：支持1M token上下文窗口</li>
-                    <li><strong>定价</strong>：$5/$25 per M token，与Opus 4.6一致</li>
-                    <li><strong>安全性</strong>：通过Constitutional AI减少有害输出，减少幻觉</li>
-                </ul>
-            </div>
-            
-            <!-- Gemini 3.1 Pro -->
             <div class="model-section">
                 <h4>Gemini 3.1 Pro（Google） <span class="tag-latest">最新</span></h4>
                 <div class="news-links-group">
@@ -1365,24 +1278,6 @@
             
             <!-- GPT-4 -->
             
-                <h4>Gemini 3.1 Pro（Google） <span class="tag-latest">最新</span></h4>
-                <div class="news-links-group">
-                    <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/" target="_blank" class="news-link">Google官方博客</a>
-                    <a href="https://news.qq.com/rain/a/20260220A029HK00" target="_blank" class="news-link">腾讯新闻</a>
-                    <a href="https://www.ithome.com/0/942/071.htm" target="_blank" class="news-link">IT之家报道</a>
-                </div>
-                <div class="model-meta">发布时间：2026年2月19日</div>
-                <p><strong>主要特性</strong>：</p>
-                <ul>
-                    <li><strong>推理能力翻倍</strong>：在推理基准测试中分数翻倍，达到行业领先水平</li>
-                    <li><strong>SVG代码生成</strong>：新增SVG代码生成功能，可输出可编辑的UI交互动效</li>
-                    <li><strong>深度研究智能体</strong>：支持Deep Research与Deep Research Max，可连接专有数据源</li>
-                    <li><strong>原生多模态</strong>：从训练开始就支持文本、图像、音频、视频</li>
-                    <li><strong>与Google生态深度集成</strong>：搜索、办公套件、Android、NotebookLM</li>
-                </ul>
-            </div>
-            
-            <!-- GPT-4 -->
             <div class="model-section">
                 <h4>GPT-4系列（OpenAI）</h4>
                 <div class="news-links-group">
@@ -1394,15 +1289,6 @@
             
             <!-- Claude 3 -->
             
-                <h4>GPT-4系列（OpenAI）</h4>
-                <div class="news-links-group">
-                    <a href="https://openai.com/research/gpt-4" target="_blank" class="news-link">OpenAI官方</a>
-                </div>
-                <div class="model-meta">发布时间：2023年3月</div>
-                <p><strong>主要特性</strong>：多模态能力（图像输入和文本输出），推理能力达到人类水平，支持32K+ tokens上下文，多语言支持显著提升。</p>
-            </div>
-            
-            <!-- Claude 3 -->
             <div class="model-section">
                 <h4>Claude 3系列（Anthropic）</h4>
                 <div class="news-links-group">
@@ -1414,15 +1300,6 @@
             
             <!-- Gemini 1.0 -->
             
-                <h4>Claude 3系列（Anthropic）</h4>
-                <div class="news-links-group">
-                    <a href="https://www.anthropic.com/news/claude-3-family" target="_blank" class="news-link">Anthropic官方</a>
-                </div>
-                <div class="model-meta">发布时间：2024年3月</div>
-                <p><strong>主要特性</strong>：安全性优先（Constitutional AI），长上下文（200K tokens），多模态（图像分析），真实性方面表现优异。</p>
-            </div>
-            
-            <!-- Gemini 1.0 -->
             <div class="model-section">
                 <h4>Gemini 1.0/2.0（Google）</h4>
                 <div class="news-links-group">
@@ -1434,15 +1311,6 @@
             
             <!-- Llama 4 -->
             
-                <h4>Gemini 1.0/2.0（Google）</h4>
-                <div class="news-links-group">
-                    <a href="https://blog.google/technology/ai/gemini-ai/" target="_blank" class="news-link">Google官方</a>
-                </div>
-                <div class="model-meta">发布时间：2023年12月（1.0）/ 2024年（2.0）</div>
-                <p><strong>主要特性</strong>：原生多模态，三种规模（Ultra/Pro/Nano），与Google生态集成（搜索、办公套件、Android）。</p>
-            </div>
-            
-            <!-- Llama 4 -->
             <div class="model-section">
                 <h4>Llama 4系列（Meta）</h4>
                 <div class="news-links-group">
@@ -1462,629 +1330,40 @@
             <h3>5.2 多模态AI的崛起</h3>
             <p>2023-2026年，AI从单一文本走向多模态理解和生成。</p>
             
-            <h4>文本-图像生成</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/Midjourney" target="_blank" class="baike-link">Midjourney V6</a></strong>：图像生成质量极高，艺术创作首选
-                    <a href="https://www.midjourney.com" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/DALL-E" target="_blank" class="baike-link">DALL-E 3</a></strong>：与ChatGPT集成，提示词理解能力强
-                    <a href="https://openai.com/dall-e-3" target="_blank" class="news-link">OpenAI官方</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/Stable%20Diffusion" target="_blank" class="baike-link">Stable Diffusion XL</a></strong>：开源，可本地部署和微调
-                    <a href="https://stability.ai" target="_blank" class="news-link">Stability AI官网</a>
-                </li>
-            </ul>
-            
-            <h4>文本-视频生成</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/Sora" target="_blank" class="baike-link">Sora（OpenAI）</a></strong> <span class="tag-deprecated">已关停</span>：2024年初引发轰动，但已于2026年3月24日关停
-                    <a href="https://news.qq.com/rain/a/20260325A06LHC00" target="_blank" class="news-link">关停报道</a>
-                    <a href="https://www.thepaper.cn/newsDetail_forward_32826836" target="_blank" class="news-link">澎湃新闻</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/Runway" target="_blank" class="baike-link">Runway Gen-2/3</a></strong>：视频编辑和生成工具，专业创作者使用
-                    <a href="https://runwayml.com" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/Pika" target="_blank" class="baike-link">Pika</a></strong>：新兴视频生成工具，操作简单
-                    <a href="https://pika.art" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/%E5%8F%AF%E7%81%B5" target="_blank" class="baike-link">可灵（Kling）</a></strong>：快手推出的视频生成模型，在Sora关停后成为重要替代
-                    <a href="https://klingai.com" target="_blank" class="news-link">官网</a>
-                </li>
-            </ul>
-            
-            <h4>语音-文本模型</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/Whisper" target="_blank" class="baike-link">Whisper（OpenAI）</a></strong>：多语言语音识别，准确率高
-                    <a href="https://openai.com/research/whisper" target="_blank" class="news-link">OpenAI官方</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/ElevenLabs" target="_blank" class="baike-link">ElevenLabs</a></strong>：语音克隆和生成，逼真度高
-                    <a href="https://elevenlabs.io" target="_blank" class="news-link">官网</a>
-                </li>
-            </ul>
-            
             <h3>5.3 <a href="https://baike.baidu.com/item/AI%20Agent" target="_blank" class="baike-link">AI Agent</a>（智能体）</h3>
             <p>2024-2026年的重要趋势：从"聊天工具"到"自主Agent"。</p>
-            
-            <h4>什么是AI Agent？</h4>
-            <p>AI Agent是能够<strong>感知环境、自主决策、执行动作</strong>以完成目标的智能系统。相比单纯的对话模型，Agent具有：</p>
-            <ul>
-                <li><strong>自主性</strong>：无需人类干预，自主规划并执行任务</li>
-                <li><strong>工具使用</strong>：能够调用外部工具（搜索、代码执行、API调用）</li>
-                <li><strong>记忆机制</strong>：长期记忆和短期记忆结合</li>
-                <li><strong>反思能力</strong>：能够评估自己的行动并调整策略</li>
-            </ul>
-            
-            <h4>代表系统</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/AutoGPT" target="_blank" class="baike-link">AutoGPT</a></strong>：早期探索，自主拆分任务并执行</li>
-                <li><strong>AgentGPT</strong>：基于Web的自主Agent平台
-                    <a href="https://agentgpt.reworkd.ai" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/LangChain" target="_blank" class="baike-link">LangChain Agent</a></strong>：开发框架，支持多种Agent架构
-                    <a href="https://langchain.com" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong>OpenAI Assistants API</strong>：官方Agent开发接口
-                    <a href="https://platform.openai.com/docs/assistants" target="_blank" class="news-link">官方文档</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/Devin" target="_blank" class="baike-link">Devin（Cognition AI）</a></strong>：AI软件工程师，能够独立完成编程任务</li>
-                <li><strong>OpenAI Codex</strong>：集成GPT-5.5的编程Agent平台</li>
-            </ul>
-            
-            <h4>最新动态</h4>
-            <ul>
-                <li>腾讯多款Agent智能体亮相2026数字中国建设峰会
-                    <a href="https://finance.sina.com.cn/tech/digi/2026-04-29/doc-inhwefuw7881849.shtml" target="_blank" class="news-link">新浪报道</a>
-                </li>
-                <li>DeepMind揭示AI Agent安全风险："智能体陷阱"
-                    <a href="https://news.qq.com/rain/a/20260420A02TYR00" target="_blank" class="news-link">腾讯新闻</a>
-                </li>
-                <li>开源AI Agent框架Hermes Agent接入腾讯元宝
-                    <a href="https://news.qq.com/rain/a/20260429A0522Z00" target="_blank" class="news-link">腾讯新闻</a>
-                </li>
-            </ul>
             
             <h3>5.4 边缘AI与小型化模型</h3>
             <p>2024-2026年的另一重要趋势：模型小型化，部署到边缘设备。</p>
             
-            <h4>技术驱动</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/%E6%A8%A1%E5%9E%8B%E7%86%94%E7%83%98" target="_blank" class="baike-link">模型蒸馏</a></strong>：将大模型知识压缩到小模型</li>
-                <li><strong><a href="https://baike.baidu.com/item/%E9%87%8F%E5%8C%96" target="_blank" class="baike-link">量化</a></strong>：降低模型参数精度（如FP32→INT8）</li>
-                <li><strong><a href="https://baike.baidu.com/item/%E5%89%AA%E6%9E%9D" target="_blank" class="baike-link">剪枝</a></strong>：移除不重要的神经元/连接</li>
-            </ul>
-            
-            <h4>代表模型</h4>
-            <ul>
-                <li><strong>Phi-3（Microsoft）</strong>：38亿参数，性能媲美大模型</li>
-                <li><strong>Gemma（Google）</strong>：基于Gemini技术，轻量级开源模型
-                    <a href="https://ai.google.dev/gemma" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong>MobileVLM</strong>：面向移动设备的多模态模型</li>
-            </ul>
-            
             <h3>5.5 AI监管与伦理</h3>
             <p>随着AI能力增强，监管和伦理问题日益重要。</p>
             
-            <h4>全球监管动态</h4>
-            <ul>
-                <li><strong>欧盟AI法案</strong>（2024）：全球首部全面AI监管法律，按风险分级监管
-                    <a href="https://www.europarl.europa.eu/topics/en/article/20240313STO01504/eu-ai-act" target="_blank" class="news-link">欧洲议会</a>
-                </li>
-                <li><strong>美国行政令</strong>（2023）：要求AI公司分享安全测试结果</li>
-                <li><strong>中国生成式AI规范</strong>（2023）：要求AI生成内容标识、安全评估</li>
-            </ul>
-            
-            <h4>关键技术</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/%E5%8F%AF%E8%A7%A3%E9%87%8AAI" target="_blank" class="baike-link">可解释AI（XAI）</a></strong>：让AI决策过程可理解</li>
-                <li><strong><a href="https://baike.baidu.com/item/AI%E5%AF%B9%E9%BD%90" target="_blank" class="baike-link">AI对齐</a>（Alignment）</strong>：确保AI目标与人类价值观一致</li>
-                <li><strong>AI安全</strong>：防止AI被滥用、对抗攻击等</li>
-            </ul>
-            
-            <div class="highlight-box">
-                <strong>💡 2026年AI发展态势：</strong><br>
-                - <strong>能力</strong>：多模态、长上下文、Agent化<br>
-                - <strong>效率</strong>：模型小型化、边缘部署、成本降低（GPT-5.5每百万token成本降至$5）<br>
-                - <strong>治理</strong>：监管框架完善、伦理标准建立<br>
-                - <strong>应用</strong>：从聊天工具到生产力革命，AI正在成为真正的工作伙伴
-            </div>
-        </div>
-
-        <!-- 第六章 -->
-        <div class="chapter" id="ch6">
-            <h2>附录：AI学习资源</h2>
-            <p>本附录提供系统性的AI学习资源，帮助读者从入门到精通。</p>
-            
             <h3>📚 推荐书籍</h3>
-            
-            <h4>入门级</h4>
-            <ul>
-                <li><strong>《<a href="https://baike.baidu.com/item/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%EF%BC%9A%E4%B8%80%E7%A7%8D%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95" target="_blank" class="baike-link">人工智能：一种现代方法</a>》（第4版）</strong> - Stuart Russell & Peter Norvig
-                    <br>👉 经典教材，全面覆盖AI各领域，适合打基础</li>
-                <li><strong>《<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%91%A8%E5%BF%97%E5%8D%8E%E8%91%97%EF%BC%89" target="_blank" class="baike-link">机器学习》（周志华著）</a></strong>
-                    <br>👉 中文经典教材，被称为"西瓜书"，讲解清晰</li>
-                <li><strong>《<a href="https://baike.baidu.com/item/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%8A%82%E8%AF%BE%E6%96%87%E6%9C%AC" target="_blank" class="baike-link">深度学习</a>（花书）</strong> - Ian Goodfellow等
-                    <br>👉 深度学习奠基性教材，理论性强</li>
-            </ul>
-            
-            <h4>进阶级</h4>
-            <ul>
-                <li><strong>《动手学深度学习》</strong> - 李沐等
-                    <br>👉 理论+代码实践，有配套视频教程，适合工程师</li>
-                <li><strong>《自然语言处理入门》</strong> - 何晗
-                    <br>👉 中文NLP入门佳作，代码示例丰富</li>
-                <li><strong>《<a href="https://baike.baidu.com/item/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%EF%BC%88%E7%AC%AC%E9%A1%BF%E8%91%97%EF%BC%89" target="_blank" class="baike-link">强化学习</a>（第2版）》</strong> - Richard Sutton & Andrew Barto
-                    <br>👉 强化学习圣经，理论基础扎实</li>
-            </ul>
-            
-            <h4>实战级</h4>
-            <ul>
-                <li><strong>《深度学习实战》</strong> - François Chollet（Keras作者）
-                    <br>👉 用Keras实战，代码示例丰富</li>
-                <li><strong>《Transformer自然语言处理》</strong> - Lewis Tunstall等
-                    <br>👉 专注Transformer和Hugging Face库</li>
-            </ul>
             
             <h3>🎓 在线课程</h3>
             
-            <h4>综合课程</h4>
-            <ul>
-                <li><strong>吴恩达《机器学习》</strong>（Coursera）
-                    <br>👉 最受欢迎的ML入门课，讲解直观易懂
-                    <a href="https://www.coursera.org/learn/machine-learning" target="_blank" class="news-link">课程链接</a>
-                </li>
-                <li><strong>吴恩达《深度学习专项》</strong>（Coursera）
-                    <br>👉 5门课，从基础到CNN、RNN、结构化ML项目
-                    <a href="https://www.coursera.org/specializations/deep-learning" target="_blank" class="news-link">课程链接</a>
-                </li>
-                <li><strong>李宏毅《机器学习》</strong>（YouTube）
-                    <br>👉 中文课程，幽默风趣，覆盖前沿技术</li>
-            </ul>
-            
-            <h4>专项课程</h4>
-            <ul>
-                <li><strong>《自然语言处理》</strong>（DeepLearning.AI）
-                    <br>👉 专注NLP，覆盖RNN、Attention、Transformer
-                    <a href="https://www.deeplearning.ai/courses/natural-language-processing-specialization/" target="_blank" class="news-link">课程链接</a>
-                </li>
-                <li><strong>《强化学习》</strong>（David Silver，YouTube）
-                    <br>👉 DeepMind研究员的课程，深入浅出</li>
-            </ul>
-            
             <h3>🛠️ 开源工具与框架</h3>
             
-            <h4>深度学习框架</h4>
-            <table>
-                <tr>
-                    <th>框架</th>
-                    <th>特点</th>
-                    <th>适用场景</th>
-                </tr>
-                <tr>
-                    <td><strong><a href="https://baike.baidu.com/item/PyTorch" target="_blank" class="baike-link">PyTorch</a></strong></td>
-                    <td>动态图，灵活性高，社区活跃</td>
-                    <td>研究、快速原型</td>
-                </tr>
-                <tr>
-                    <td><strong><a href="https://baike.baidu.com/item/TensorFlow" target="_blank" class="baike-link">TensorFlow</a></strong></td>
-                    <td>工业级部署，生态完善</td>
-                    <td>生产环境、移动端</td>
-                </tr>
-                <tr>
-                    <td><strong><a href="https://baike.baidu.com/item/JAX" target="_blank" class="baike-link">JAX</a></strong></td>
-                    <td>Google出品，自动微分+加速</td>
-                    <td>高性能计算、研究</td>
-                </tr>
-                <tr>
-                    <td><strong><a href="https://baike.baidu.com/item/PaddlePaddle" target="_blank" class="baike-link">PaddlePaddle</a></strong></td>
-                    <td>百度出品，中文支持好</td>
-                    <td>中文NLP、国产替代</td>
-                </tr>
-            </table>
-            
-            <h4>专用工具</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/Hugging%20Face" target="_blank" class="baike-link">Hugging Face Transformers</a></strong>：预训练模型库，支持PyTorch/TensorFlow
-                    <a href="https://huggingface.co" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong>LangChain</strong>：LLM应用开发框架，支持Agent、工具调用
-                    <a href="https://langchain.com" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong>PyTorch Lightning</strong>：简化PyTorch代码，工程化友好</li>
-                <li><strong>Weights & Biases</strong>：实验跟踪、可视化工具</li>
-            </ul>
-            
             <h3>🗺️ 学习路径建议</h3>
-            
-            <h4>路径1：学术研究方向</h4>
-            <ol>
-                <li><strong>基础</strong>：<a href="https://baike.baidu.com/item/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0" target="_blank" class="baike-link">线性代数</a>、<a href="https://baike.baidu.com/item/%E6%A6%82%E7%8E%87%E8%AE%BA" target="_blank" class="baike-link">概率统计</a>、<a href="https://baike.baidu.com/item/%E5%BE%AE%E7%A7%AF%E5%88%86" target="_blank" class="baike-link">微积分</a></li>
-                <li><strong>机器学习</strong>：吴恩达课程 + 西瓜书</li>
-                <li><strong>深度学习</strong>：花书 + 动手学深度学习</li>
-                <li><strong>专项</strong>：选择NLP/CV/RL某一方向深入</li>
-                <li><strong>前沿</strong>：跟踪顶会论文（NeurIPS、ICML、ICLR）</li>
-            </ol>
-            
-            <h4>路径2：工程应用方向</h4>
-            <ol>
-                <li><strong>编程基础</strong>：Python、NumPy、Pandas</li>
-                <li><strong>机器学习</strong>：<a href="https://baike.baidu.com/item/Scikit-learn" target="_blank" class="baike-link">Scikit-learn</a>实战</li>
-                <li><strong>深度学习</strong>：PyTorch/TensorFlow + 动手学深度学习</li>
-                <li><strong>工程化</strong>：模型部署、优化、监控</li>
-                <li><strong>领域应用</strong>：选择某一行业（金融/医疗/电商）深耕</li>
-            </ol>
-            
-            <h4>路径3：快速入门（3个月）</h4>
-            <ol>
-                <li><strong>第1月</strong>：吴恩达《机器学习》+ Python基础</li>
-                <li><strong>第2月</strong>：动手学深度学习（前5章）+ PyTorch入门</li>
-                <li><strong>第3月</strong>：Kaggle竞赛 + Hugging Face实战</li>
-            </ol>
-            
-            <div class="tip-box">
-                <strong>💡 学习建议：</strong><br>
-                - <strong>理论+实践</strong>：不要只看理论，一定要动手写代码<br>
-                - <strong>项目驱动</strong>：通过实际项目学习，比单纯看课程效果好<br>
-                - <strong>社区参与</strong>：加入AI社区（如Hugging Face、Papers with Code）<br>
-                - <strong>持续学习</strong>：AI领域更新快，要保持学习习惯
-            </div>
-        </div>
-    </div>
-
-    <!-- 返回顶部按钮 -->
-    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        ↑
-    </div>
-
-    <script>
-        // 平滑滚动
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-
-        // 显示/隐藏返回顶部按钮
-        window.addEventListener('scroll', () => {
-            const btn = document.querySelector('.back-to-top');
-            if (window.scrollY > 300) {
-                btn.style.display = 'flex';
-            } else {
-                btn.style.display = 'none';
-            }
-        });
-
-        // 页面加载时隐藏返回顶部按钮
-        document.addEventListener('DOMContentLoaded', () => {
-            const btn = document.querySelector('.back-to-top');
-            btn.style.display = 'none';
-        });
-    </script>
-</body>
-</html>
-                <h4>Llama 4系列（Meta）</h4>
-                <div class="news-links-group">
-                    <a href="https://news.qq.com/rain/a/20250407A02SEG00" target="_blank" class="news-link">腾讯新闻</a>
-                    <a href="https://zhuanlan.zhihu.com/p/1892715722716722662" target="_blank" class="news-link">知乎解析</a>
-                </div>
-                <div class="model-meta">发布时间：2025年4月5日</div>
-                <p><strong>主要特性</strong>：</p>
-                <ul>
-                    <li><strong>四个模型</strong>：Scout、Maverick、Behemoth等</li>
-                    <li><strong>MoE架构</strong>：首次引入Mixture-of-Experts专家混合架构</li>
-                    <li><strong>原生多模态</strong>：支持多模态输入，支持10M超长上下文</li>
-                    <li><strong>开源</strong>：允许商用，推动AI民主化</li>
-                </ul>
-            </div>
             
             <h3>5.2 多模态AI的崛起</h3>
             <p>2023-2026年，AI从单一文本走向多模态理解和生成。</p>
             
-            <h4>文本-图像生成</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/Midjourney" target="_blank" class="baike-link">Midjourney V6</a></strong>：图像生成质量极高，艺术创作首选
-                    <a href="https://www.midjourney.com" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/DALL-E" target="_blank" class="baike-link">DALL-E 3</a></strong>：与ChatGPT集成，提示词理解能力强
-                    <a href="https://openai.com/dall-e-3" target="_blank" class="news-link">OpenAI官方</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/Stable%20Diffusion" target="_blank" class="baike-link">Stable Diffusion XL</a></strong>：开源，可本地部署和微调
-                    <a href="https://stability.ai" target="_blank" class="news-link">Stability AI官网</a>
-                </li>
-            </ul>
-            
-            <h4>文本-视频生成</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/Sora" target="_blank" class="baike-link">Sora（OpenAI）</a></strong> <span class="tag-deprecated">已关停</span>：2024年初引发轰动，但已于2026年3月24日关停
-                    <a href="https://news.qq.com/rain/a/20260325A06LHC00" target="_blank" class="news-link">关停报道</a>
-                    <a href="https://www.thepaper.cn/newsDetail_forward_32826836" target="_blank" class="news-link">澎湃新闻</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/Runway" target="_blank" class="baike-link">Runway Gen-2/3</a></strong>：视频编辑和生成工具，专业创作者使用
-                    <a href="https://runwayml.com" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/Pika" target="_blank" class="baike-link">Pika</a></strong>：新兴视频生成工具，操作简单
-                    <a href="https://pika.art" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/%E5%8F%AF%E7%81%B5" target="_blank" class="baike-link">可灵（Kling）</a></strong>：快手推出的视频生成模型，在Sora关停后成为重要替代
-                    <a href="https://klingai.com" target="_blank" class="news-link">官网</a>
-                </li>
-            </ul>
-            
-            <h4>语音-文本模型</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/Whisper" target="_blank" class="baike-link">Whisper（OpenAI）</a></strong>：多语言语音识别，准确率高
-                    <a href="https://openai.com/research/whisper" target="_blank" class="news-link">OpenAI官方</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/ElevenLabs" target="_blank" class="baike-link">ElevenLabs</a></strong>：语音克隆和生成，逼真度高
-                    <a href="https://elevenlabs.io" target="_blank" class="news-link">官网</a>
-                </li>
-            </ul>
-            
             <h3>5.3 <a href="https://baike.baidu.com/item/AI%20Agent" target="_blank" class="baike-link">AI Agent</a>（智能体）</h3>
             <p>2024-2026年的重要趋势：从"聊天工具"到"自主Agent"。</p>
-            
-            <h4>什么是AI Agent？</h4>
-            <p>AI Agent是能够<strong>感知环境、自主决策、执行动作</strong>以完成目标的智能系统。相比单纯的对话模型，Agent具有：</p>
-            <ul>
-                <li><strong>自主性</strong>：无需人类干预，自主规划并执行任务</li>
-                <li><strong>工具使用</strong>：能够调用外部工具（搜索、代码执行、API调用）</li>
-                <li><strong>记忆机制</strong>：长期记忆和短期记忆结合</li>
-                <li><strong>反思能力</strong>：能够评估自己的行动并调整策略</li>
-            </ul>
-            
-            <h4>代表系统</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/AutoGPT" target="_blank" class="baike-link">AutoGPT</a></strong>：早期探索，自主拆分任务并执行</li>
-                <li><strong>AgentGPT</strong>：基于Web的自主Agent平台
-                    <a href="https://agentgpt.reworkd.ai" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/LangChain" target="_blank" class="baike-link">LangChain Agent</a></strong>：开发框架，支持多种Agent架构
-                    <a href="https://langchain.com" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong>OpenAI Assistants API</strong>：官方Agent开发接口
-                    <a href="https://platform.openai.com/docs/assistants" target="_blank" class="news-link">官方文档</a>
-                </li>
-                <li><strong><a href="https://baike.baidu.com/item/Devin" target="_blank" class="baike-link">Devin（Cognition AI）</a></strong>：AI软件工程师，能够独立完成编程任务</li>
-                <li><strong>OpenAI Codex</strong>：集成GPT-5.5的编程Agent平台</li>
-            </ul>
-            
-            <h4>最新动态</h4>
-            <ul>
-                <li>腾讯多款Agent智能体亮相2026数字中国建设峰会
-                    <a href="https://finance.sina.com.cn/tech/digi/2026-04-29/doc-inhwefuw7881849.shtml" target="_blank" class="news-link">新浪报道</a>
-                </li>
-                <li>DeepMind揭示AI Agent安全风险："智能体陷阱"
-                    <a href="https://news.qq.com/rain/a/20260420A02TYR00" target="_blank" class="news-link">腾讯新闻</a>
-                </li>
-                <li>开源AI Agent框架Hermes Agent接入腾讯元宝
-                    <a href="https://news.qq.com/rain/a/20260429A0522Z00" target="_blank" class="news-link">腾讯新闻</a>
-                </li>
-            </ul>
             
             <h3>5.4 边缘AI与小型化模型</h3>
             <p>2024-2026年的另一重要趋势：模型小型化，部署到边缘设备。</p>
             
-            <h4>技术驱动</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/%E6%A8%A1%E5%9E%8B%E7%86%94%E7%83%98" target="_blank" class="baike-link">模型蒸馏</a></strong>：将大模型知识压缩到小模型</li>
-                <li><strong><a href="https://baike.baidu.com/item/%E9%87%8F%E5%8C%96" target="_blank" class="baike-link">量化</a></strong>：降低模型参数精度（如FP32→INT8）</li>
-                <li><strong><a href="https://baike.baidu.com/item/%E5%89%AA%E6%9E%9D" target="_blank" class="baike-link">剪枝</a></strong>：移除不重要的神经元/连接</li>
-            </ul>
-            
-            <h4>代表模型</h4>
-            <ul>
-                <li><strong>Phi-3（Microsoft）</strong>：38亿参数，性能媲美大模型</li>
-                <li><strong>Gemma（Google）</strong>：基于Gemini技术，轻量级开源模型
-                    <a href="https://ai.google.dev/gemma" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong>MobileVLM</strong>：面向移动设备的多模态模型</li>
-            </ul>
-            
             <h3>5.5 AI监管与伦理</h3>
             <p>随着AI能力增强，监管和伦理问题日益重要。</p>
             
-            <h4>全球监管动态</h4>
-            <ul>
-                <li><strong>欧盟AI法案</strong>（2024）：全球首部全面AI监管法律，按风险分级监管
-                    <a href="https://www.europarl.europa.eu/topics/en/article/20240313STO01504/eu-ai-act" target="_blank" class="news-link">欧洲议会</a>
-                </li>
-                <li><strong>美国行政令</strong>（2023）：要求AI公司分享安全测试结果</li>
-                <li><strong>中国生成式AI规范</strong>（2023）：要求AI生成内容标识、安全评估</li>
-            </ul>
-            
-            <h4>关键技术</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/%E5%8F%AF%E8%A7%A3%E9%87%8AAI" target="_blank" class="baike-link">可解释AI（XAI）</a></strong>：让AI决策过程可理解</li>
-                <li><strong><a href="https://baike.baidu.com/item/AI%E5%AF%B9%E9%BD%90" target="_blank" class="baike-link">AI对齐</a>（Alignment）</strong>：确保AI目标与人类价值观一致</li>
-                <li><strong>AI安全</strong>：防止AI被滥用、对抗攻击等</li>
-            </ul>
-            
-            <div class="highlight-box">
-                <strong>💡 2026年AI发展态势：</strong><br>
-                - <strong>能力</strong>：多模态、长上下文、Agent化<br>
-                - <strong>效率</strong>：模型小型化、边缘部署、成本降低（GPT-5.5每百万token成本降至$5）<br>
-                - <strong>治理</strong>：监管框架完善、伦理标准建立<br>
-                - <strong>应用</strong>：从聊天工具到生产力革命，AI正在成为真正的工作伙伴
-            </div>
-        </div>
-
-        <!-- 第六章 -->
-        <div class="chapter" id="ch6">
-            <h2>附录：AI学习资源</h2>
-            <p>本附录提供系统性的AI学习资源，帮助读者从入门到精通。</p>
-            
             <h3>📚 推荐书籍</h3>
-            
-            <h4>入门级</h4>
-            <ul>
-                <li><strong>《<a href="https://baike.baidu.com/item/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%EF%BC%9A%E4%B8%80%E7%A7%8D%E7%8E%B0%E4%BB%A3%E6%96%B9%E6%B3%95" target="_blank" class="baike-link">人工智能：一种现代方法</a>》（第4版）</strong> - Stuart Russell & Peter Norvig
-                    <br>👉 经典教材，全面覆盖AI各领域，适合打基础</li>
-                <li><strong>《<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%91%A8%E5%BF%97%E5%8D%8E%E8%91%97%EF%BC%89" target="_blank" class="baike-link">机器学习》（周志华著）</a></strong>
-                    <br>👉 中文经典教材，被称为"西瓜书"，讲解清晰</li>
-                <li><strong>《<a href="https://baike.baidu.com/item/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%8A%82%E8%AF%BE%E6%96%87%E6%9C%AC" target="_blank" class="baike-link">深度学习</a>（花书）</strong> - Ian Goodfellow等
-                    <br>👉 深度学习奠基性教材，理论性强</li>
-            </ul>
-            
-            <h4>进阶级</h4>
-            <ul>
-                <li><strong>《动手学深度学习》</strong> - 李沐等
-                    <br>👉 理论+代码实践，有配套视频教程，适合工程师</li>
-                <li><strong>《自然语言处理入门》</strong> - 何晗
-                    <br>👉 中文NLP入门佳作，代码示例丰富</li>
-                <li><strong>《<a href="https://baike.baidu.com/item/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%EF%BC%88%E7%AC%AC%E9%A1%BF%E8%91%97%EF%BC%89" target="_blank" class="baike-link">强化学习</a>（第2版）》</strong> - Richard Sutton & Andrew Barto
-                    <br>👉 强化学习圣经，理论基础扎实</li>
-            </ul>
-            
-            <h4>实战级</h4>
-            <ul>
-                <li><strong>《深度学习实战》</strong> - François Chollet（Keras作者）
-                    <br>👉 用Keras实战，代码示例丰富</li>
-                <li><strong>《Transformer自然语言处理》</strong> - Lewis Tunstall等
-                    <br>👉 专注Transformer和Hugging Face库</li>
-            </ul>
             
             <h3>🎓 在线课程</h3>
             
-            <h4>综合课程</h4>
-            <ul>
-                <li><strong>吴恩达《机器学习》</strong>（Coursera）
-                    <br>👉 最受欢迎的ML入门课，讲解直观易懂
-                    <a href="https://www.coursera.org/learn/machine-learning" target="_blank" class="news-link">课程链接</a>
-                </li>
-                <li><strong>吴恩达《深度学习专项》</strong>（Coursera）
-                    <br>👉 5门课，从基础到CNN、RNN、结构化ML项目
-                    <a href="https://www.coursera.org/specializations/deep-learning" target="_blank" class="news-link">课程链接</a>
-                </li>
-                <li><strong>李宏毅《机器学习》</strong>（YouTube）
-                    <br>👉 中文课程，幽默风趣，覆盖前沿技术</li>
-            </ul>
-            
-            <h4>专项课程</h4>
-            <ul>
-                <li><strong>《自然语言处理》</strong>（DeepLearning.AI）
-                    <br>👉 专注NLP，覆盖RNN、Attention、Transformer
-                    <a href="https://www.deeplearning.ai/courses/natural-language-processing-specialization/" target="_blank" class="news-link">课程链接</a>
-                </li>
-                <li><strong>《强化学习》</strong>（David Silver，YouTube）
-                    <br>👉 DeepMind研究员的课程，深入浅出</li>
-            </ul>
-            
             <h3>🛠️ 开源工具与框架</h3>
-            
-            <h4>深度学习框架</h4>
-            <table>
-                <tr>
-                    <th>框架</th>
-                    <th>特点</th>
-                    <th>适用场景</th>
-                </tr>
-                <tr>
-                    <td><strong><a href="https://baike.baidu.com/item/PyTorch" target="_blank" class="baike-link">PyTorch</a></strong></td>
-                    <td>动态图，灵活性高，社区活跃</td>
-                    <td>研究、快速原型</td>
-                </tr>
-                <tr>
-                    <td><strong><a href="https://baike.baidu.com/item/TensorFlow" target="_blank" class="baike-link">TensorFlow</a></strong></td>
-                    <td>工业级部署，生态完善</td>
-                    <td>生产环境、移动端</td>
-                </tr>
-                <tr>
-                    <td><strong><a href="https://baike.baidu.com/item/JAX" target="_blank" class="baike-link">JAX</a></strong></td>
-                    <td>Google出品，自动微分+加速</td>
-                    <td>高性能计算、研究</td>
-                </tr>
-                <tr>
-                    <td><strong><a href="https://baike.baidu.com/item/PaddlePaddle" target="_blank" class="baike-link">PaddlePaddle</a></strong></td>
-                    <td>百度出品，中文支持好</td>
-                    <td>中文NLP、国产替代</td>
-                </tr>
-            </table>
-            
-            <h4>专用工具</h4>
-            <ul>
-                <li><strong><a href="https://baike.baidu.com/item/Hugging%20Face" target="_blank" class="baike-link">Hugging Face Transformers</a></strong>：预训练模型库，支持PyTorch/TensorFlow
-                    <a href="https://huggingface.co" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong>LangChain</strong>：LLM应用开发框架，支持Agent、工具调用
-                    <a href="https://langchain.com" target="_blank" class="news-link">官网</a>
-                </li>
-                <li><strong>PyTorch Lightning</strong>：简化PyTorch代码，工程化友好</li>
-                <li><strong>Weights & Biases</strong>：实验跟踪、可视化工具</li>
-            </ul>
             
             <h3>🗺️ 学习路径建议</h3>
             
-            <h4>路径1：学术研究方向</h4>
-            <ol>
-                <li><strong>基础</strong>：<a href="https://baike.baidu.com/item/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0" target="_blank" class="baike-link">线性代数</a>、<a href="https://baike.baidu.com/item/%E6%A6%82%E7%8E%87%E8%AE%BA" target="_blank" class="baike-link">概率统计</a>、<a href="https://baike.baidu.com/item/%E5%BE%AE%E7%A7%AF%E5%88%86" target="_blank" class="baike-link">微积分</a></li>
-                <li><strong>机器学习</strong>：吴恩达课程 + 西瓜书</li>
-                <li><strong>深度学习</strong>：花书 + 动手学深度学习</li>
-                <li><strong>专项</strong>：选择NLP/CV/RL某一方向深入</li>
-                <li><strong>前沿</strong>：跟踪顶会论文（NeurIPS、ICML、ICLR）</li>
-            </ol>
-            
-            <h4>路径2：工程应用方向</h4>
-            <ol>
-                <li><strong>编程基础</strong>：Python、NumPy、Pandas</li>
-                <li><strong>机器学习</strong>：<a href="https://baike.baidu.com/item/Scikit-learn" target="_blank" class="baike-link">Scikit-learn</a>实战</li>
-                <li><strong>深度学习</strong>：PyTorch/TensorFlow + 动手学深度学习</li>
-                <li><strong>工程化</strong>：模型部署、优化、监控</li>
-                <li><strong>领域应用</strong>：选择某一行业（金融/医疗/电商）深耕</li>
-            </ol>
-            
-            <h4>路径3：快速入门（3个月）</h4>
-            <ol>
-                <li><strong>第1月</strong>：吴恩达《机器学习》+ Python基础</li>
-                <li><strong>第2月</strong>：动手学深度学习（前5章）+ PyTorch入门</li>
-                <li><strong>第3月</strong>：Kaggle竞赛 + Hugging Face实战</li>
-            </ol>
-            
-            <div class="tip-box">
-                <strong>💡 学习建议：</strong><br>
-                - <strong>理论+实践</strong>：不要只看理论，一定要动手写代码<br>
-                - <strong>项目驱动</strong>：通过实际项目学习，比单纯看课程效果好<br>
-                - <strong>社区参与</strong>：加入AI社区（如Hugging Face、Papers with Code）<br>
-                - <strong>持续学习</strong>：AI领域更新快，要保持学习习惯
-            </div>
-        </div>
-    </div>
-
-    <!-- 返回顶部按钮 -->
-    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        ↑
-    </div>
-
-    <script>
-        // 平滑滚动
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-
-        // 显示/隐藏返回顶部按钮
-        window.addEventListener('scroll', () => {
-            const btn = document.querySelector('.back-to-top');
-            if (window.scrollY > 300) {
-                btn.style.display = 'flex';
-            } else {
-                btn.style.display = 'none';
-            }
-        });
-
-        // 页面加载时隐藏返回顶部按钮
-        document.addEventListener('DOMContentLoaded', () => {
-            const btn = document.querySelector('.back-to-top');
-            btn.style.display = 'none';
-        });
-    </script>
-</body>
-</html>
